@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>店舗選択</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="productlist-box">
+        <h2>店舗選択</h2>
+        <div class="table-wrapper">
+          <!-- 商品ごとにカード風で区切る -->
+          <div
+            style="
+              background: #f7faff;
+              border-radius: 14px;
+              box-shadow: 0 2px 12px #b3d9ff55;
+              padding: 28px 24px 20px 24px;
+              margin-bottom: 36px;
+              border: 1.5px solid #b3d9ff;
+            "
+          >
+            <div
+              style="display: flex; align-items: center; margin-bottom: 10px"
+            >
+              <span style="font-size: 1.6rem; margin-right: 10px">🛒</span>
+              <span
+                style="
+                  font-weight: bold;
+                  font-size: 1.25rem;
+                  color: #223a54;
+                  letter-spacing: 0.04em;
+                "
+                >選択中の商品：<span style="font-size: 1.3rem; color: #1a237e"
+                  >コーヒー</span
+                ></span
+              >
+            </div>
+            <div style="margin-bottom: 14px; color: #555; font-size: 0.98rem">
+              下記の取扱店舗から購入店舗を選択してください。
+            </div>
+            <div
+              style="
+                background: #fff;
+                border-radius: 8px;
+                box-shadow: 0 1px 6px #b3d9ff33;
+                padding: 12px 8px;
+              "
+            >
+              <div
+                class="order-history-scroll"
+                style="max-height: 160px; overflow-y: auto"
+              >
+                <table
+                  class="product-table sticky-header-table"
+                  style="margin-bottom: 0"
+                >
+                  <thead style="background: #e5f0ff">
+                    <tr>
+                      <th style="width: 60px">選択</th>
+                      <th style="width: 60%">店舗名</th>
+                      <th style="width: 20%">販売単価</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td style="text-align: center">
+                        <input
+                          type="radio"
+                          name="selectBranchCoffee"
+                          aria-label="コーヒーの購入店舗を選択"
+                        />
+                      </td>
+                      <td>新宿店</td>
+                      <td>130円</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: center">
+                        <input
+                          type="radio"
+                          name="selectBranchCoffee"
+                          aria-label="コーヒーの購入店舗を選択"
+                        />
+                      </td>
+                      <td>渋谷店</td>
+                      <td>135円</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: center">
+                        <input
+                          type="radio"
+                          name="selectBranchCoffee"
+                          aria-label="コーヒーの購入店舗を選択"
+                        />
+                      </td>
+                      <td>池袋店</td>
+                      <td>132円</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: center">
+                        <input
+                          type="radio"
+                          name="selectBranchCoffee"
+                          aria-label="コーヒーの購入店舗を選択"
+                        />
+                      </td>
+                      <td>秋葉原店</td>
+                      <td>134円</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: center">
+                        <input
+                          type="radio"
+                          name="selectBranchCoffee"
+                          aria-label="コーヒーの購入店舗を選択"
+                        />
+                      </td>
+                      <td>品川店</td>
+                      <td>133円</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: center">
+                        <input
+                          type="radio"
+                          name="selectBranchCoffee"
+                          aria-label="コーヒーの購入店舗を選択"
+                        />
+                      </td>
+                      <td>上野店</td>
+                      <td>131円</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div
+            style="
+              background: #f7faff;
+              border-radius: 14px;
+              box-shadow: 0 2px 12px #b3d9ff55;
+              padding: 28px 24px 20px 24px;
+              margin-bottom: 36px;
+              border: 1.5px solid #b3d9ff;
+            "
+          >
+            <div
+              style="display: flex; align-items: center; margin-bottom: 10px"
+            >
+              <span style="font-size: 1.6rem; margin-right: 10px">🛒</span>
+              <span
+                style="
+                  font-weight: bold;
+                  font-size: 1.25rem;
+                  color: #223a54;
+                  letter-spacing: 0.04em;
+                "
+                >選択中の商品：<span style="font-size: 1.3rem; color: #1a237e"
+                  >メロンソーダ</span
+                ></span
+              >
+            </div>
+            <div style="margin-bottom: 14px; color: #555; font-size: 0.98rem">
+              下記の取扱店舗から購入店舗を選択してください。
+            </div>
+            <div
+              style="
+                background: #fff;
+                border-radius: 8px;
+                box-shadow: 0 1px 6px #b3d9ff33;
+                padding: 12px 8px;
+              "
+            >
+              <div
+                class="order-history-scroll"
+                style="max-height: 160px; overflow-y: auto"
+              >
+                <table
+                  class="product-table sticky-header-table"
+                  style="margin-bottom: 0"
+                >
+                  <thead style="background: #e5f0ff">
+                    <tr>
+                      <th style="width: 60px">選択</th>
+                      <th style="width: 60%">店舗名</th>
+                      <th style="width: 20%">販売単価</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td style="text-align: center">
+                        <input
+                          type="radio"
+                          name="selectBranchMelon"
+                          aria-label="メロンソーダの購入店舗を選択"
+                        />
+                      </td>
+                      <td>新宿店</td>
+                      <td>120円</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: center">
+                        <input
+                          type="radio"
+                          name="selectBranchMelon"
+                          aria-label="メロンソーダの購入店舗を選択"
+                        />
+                      </td>
+                      <td>池袋店</td>
+                      <td>125円</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: center">
+                        <input
+                          type="radio"
+                          name="selectBranchMelon"
+                          aria-label="メロンソーダの購入店舗を選択"
+                        />
+                      </td>
+                      <td>渋谷店</td>
+                      <td>122円</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: center">
+                        <input
+                          type="radio"
+                          name="selectBranchMelon"
+                          aria-label="メロンソーダの購入店舗を選択"
+                        />
+                      </td>
+                      <td>秋葉原店</td>
+                      <td>124円</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: center">
+                        <input
+                          type="radio"
+                          name="selectBranchMelon"
+                          aria-label="メロンソーダの購入店舗を選択"
+                        />
+                      </td>
+                      <td>品川店</td>
+                      <td>123円</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: center">
+                        <input
+                          type="radio"
+                          name="selectBranchMelon"
+                          aria-label="メロンソーダの購入店舗を選択"
+                        />
+                      </td>
+                      <td>上野店</td>
+                      <td>121円</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!-- サンドイッチ -->
+          <div
+            style="
+              background: #f7faff;
+              border-radius: 14px;
+              box-shadow: 0 2px 12px #b3d9ff55;
+              padding: 28px 24px 20px 24px;
+              margin-bottom: 36px;
+              border: 1.5px solid #b3d9ff;
+            "
+          >
+            <div
+              style="display: flex; align-items: center; margin-bottom: 10px"
+            >
+              <span style="font-size: 1.6rem; margin-right: 10px">🥪</span>
+              <span
+                style="
+                  font-weight: bold;
+                  font-size: 1.25rem;
+                  color: #223a54;
+                  letter-spacing: 0.04em;
+                "
+              >
+                選択中の商品：<span style="font-size: 1.3rem; color: #1a237e"
+                  >サンドイッチ</span
+                >
+              </span>
+            </div>
+            <div style="margin-bottom: 14px; color: #555; font-size: 0.98rem">
+              下記の取扱店舗から購入店舗を選択してください。
+            </div>
+            <div
+              style="
+                background: #fff;
+                border-radius: 8px;
+                box-shadow: 0 1px 6px #b3d9ff33;
+                padding: 12px 8px;
+              "
+            >
+              <div
+                class="order-history-scroll"
+                style="max-height: 160px; overflow-y: auto"
+              >
+                <table
+                  class="product-table sticky-header-table"
+                  style="margin-bottom: 0"
+                >
+                  <thead style="background: #e5f0ff">
+                    <tr>
+                      <th style="width: 60px">選択</th>
+                      <th style="width: 60%">店舗名</th>
+                      <th style="width: 20%">販売単価</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td style="text-align: center">
+                        <input
+                          type="radio"
+                          name="selectBranchSandwich"
+                          aria-label="サンドイッチの購入店舗を選択"
+                        />
+                      </td>
+                      <td>新宿店</td>
+                      <td>350円</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: center">
+                        <input
+                          type="radio"
+                          name="selectBranchSandwich"
+                          aria-label="サンドイッチの購入店舗を選択"
+                        />
+                      </td>
+                      <td>渋谷店</td>
+                      <td>360円</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: center">
+                        <input
+                          type="radio"
+                          name="selectBranchSandwich"
+                          aria-label="サンドイッチの購入店舗を選択"
+                        />
+                      </td>
+                      <td>池袋店</td>
+                      <td>355円</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!-- 紅茶 -->
+          <div
+            style="
+              background: #f7faff;
+              border-radius: 14px;
+              box-shadow: 0 2px 12px #b3d9ff55;
+              padding: 28px 24px 20px 24px;
+              margin-bottom: 36px;
+              border: 1.5px solid #b3d9ff;
+            "
+          >
+            <div
+              style="display: flex; align-items: center; margin-bottom: 10px"
+            >
+              <span style="font-size: 1.6rem; margin-right: 10px">🫖</span>
+              <span
+                style="
+                  font-weight: bold;
+                  font-size: 1.25rem;
+                  color: #223a54;
+                  letter-spacing: 0.04em;
+                "
+              >
+                選択中の商品：<span style="font-size: 1.3rem; color: #1a237e"
+                  >紅茶</span
+                >
+              </span>
+            </div>
+            <div style="margin-bottom: 14px; color: #555; font-size: 0.98rem">
+              下記の取扱店舗から購入店舗を選択してください。
+            </div>
+            <div
+              style="
+                background: #fff;
+                border-radius: 8px;
+                box-shadow: 0 1px 6px #b3d9ff33;
+                padding: 12px 8px;
+              "
+            >
+              <div
+                class="order-history-scroll"
+                style="max-height: 160px; overflow-y: auto"
+              >
+                <table
+                  class="product-table sticky-header-table"
+                  style="margin-bottom: 0"
+                >
+                  <thead style="background: #e5f0ff">
+                    <tr>
+                      <th style="width: 60px">選択</th>
+                      <th style="width: 60%">店舗名</th>
+                      <th style="width: 20%">販売単価</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td style="text-align: center">
+                        <input
+                          type="radio"
+                          name="selectBranchTea"
+                          aria-label="紅茶の購入店舗を選択"
+                        />
+                      </td>
+                      <td>新宿店</td>
+                      <td>200円</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: center">
+                        <input
+                          type="radio"
+                          name="selectBranchTea"
+                          aria-label="紅茶の購入店舗を選択"
+                        />
+                      </td>
+                      <td>渋谷店</td>
+                      <td>210円</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: center">
+                        <input
+                          type="radio"
+                          name="selectBranchTea"
+                          aria-label="紅茶の購入店舗を選択"
+                        />
+                      </td>
+                      <td>池袋店</td>
+                      <td>205円</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!-- カフェラテ -->
+          <div
+            style="
+              background: #f7faff;
+              border-radius: 14px;
+              box-shadow: 0 2px 12px #b3d9ff55;
+              padding: 28px 24px 20px 24px;
+              margin-bottom: 36px;
+              border: 1.5px solid #b3d9ff;
+            "
+          >
+            <div
+              style="display: flex; align-items: center; margin-bottom: 10px"
+            >
+              <span style="font-size: 1.6rem; margin-right: 10px">☕️</span>
+              <span
+                style="
+                  font-weight: bold;
+                  font-size: 1.25rem;
+                  color: #223a54;
+                  letter-spacing: 0.04em;
+                "
+              >
+                選択中の商品：<span style="font-size: 1.3rem; color: #1a237e"
+                  >カフェラテ</span
+                >
+              </span>
+            </div>
+            <div style="margin-bottom: 14px; color: #555; font-size: 0.98rem">
+              下記の取扱店舗から購入店舗を選択してください。
+            </div>
+            <div
+              style="
+                background: #fff;
+                border-radius: 8px;
+                box-shadow: 0 1px 6px #b3d9ff33;
+                padding: 12px 8px;
+              "
+            >
+              <div
+                class="order-history-scroll"
+                style="max-height: 160px; overflow-y: auto"
+              >
+                <table
+                  class="product-table sticky-header-table"
+                  style="margin-bottom: 0"
+                >
+                  <thead style="background: #e5f0ff">
+                    <tr>
+                      <th style="width: 60px">選択</th>
+                      <th style="width: 60%">店舗名</th>
+                      <th style="width: 20%">販売単価</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td style="text-align: center">
+                        <input
+                          type="radio"
+                          name="selectBranchLatte"
+                          aria-label="カフェラテの購入店舗を選択"
+                        />
+                      </td>
+                      <td>新宿店</td>
+                      <td>250円</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: center">
+                        <input
+                          type="radio"
+                          name="selectBranchLatte"
+                          aria-label="カフェラテの購入店舗を選択"
+                        />
+                      </td>
+                      <td>渋谷店</td>
+                      <td>255円</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: center">
+                        <input
+                          type="radio"
+                          name="selectBranchLatte"
+                          aria-label="カフェラテの購入店舗を選択"
+                        />
+                      </td>
+                      <td>池袋店</td>
+                      <td>252円</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="productlist-buttons button-row-split">
+          <button class="back-btn" onclick="history.back(); return false;">
+            戻る
+          </button>
+          <button
+            class="order-btn primary"
+            onclick="location.href='orderCart.html'; return false;"
+          >
+            注文登録カートへ
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

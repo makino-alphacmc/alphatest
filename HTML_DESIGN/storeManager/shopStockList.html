@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>店舗在庫リスト</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="productlist-box">
+        <h2>店舗在庫リスト</h2>
+        <div class="table-wrapper">
+          <div
+            style="
+              background: #f7faff;
+              border-radius: 14px;
+              box-shadow: 0 2px 12px #b3d9ff55;
+              padding: 28px 24px 24px 24px;
+              margin-bottom: 36px;
+              border: 1.5px solid #b3d9ff;
+            "
+          >
+            <p class="note" style="margin-bottom: 18px">
+              登録されている商品の在庫一覧です。
+            </p>
+            <div
+              style="
+                background: #fff;
+                border-radius: 8px;
+                box-shadow: 0 1px 6px #b3d9ff33;
+                padding: 12px 8px;
+                margin-bottom: 24px;
+              "
+            >
+              <table class="product-table" style="margin-bottom: 0">
+                <thead>
+                  <tr>
+                    <th class="radio-cell"></th>
+                    <th
+                      style="text-align: center"
+                      aria-label="商品ID"
+                      scope="col"
+                    >
+                      商品ID
+                    </th>
+                    <th
+                      style="text-align: center"
+                      aria-label="商品名"
+                      scope="col"
+                    >
+                      商品名
+                    </th>
+                    <th
+                      style="text-align: center"
+                      aria-label="金額"
+                      scope="col"
+                    >
+                      金額
+                    </th>
+                    <th
+                      style="text-align: center"
+                      aria-label="在庫数"
+                      scope="col"
+                    >
+                      在庫数
+                    </th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="radio-cell">
+                      <input
+                        type="checkbox"
+                        name="selectStock"
+                        aria-label="商品を選択"
+                      />
+                    </td>
+                    <td style="text-align: center">101</td>
+                    <td style="text-align: center">メロンソーダ</td>
+                    <td style="text-align: center">120</td>
+                    <td style="text-align: center">50</td>
+                    <td style="text-align: center">
+                      <button
+                        class="update-btn"
+                        onclick="location.href='shopStockAdd.html'; return false;"
+                      >
+                        更新
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="radio-cell">
+                      <input
+                        type="checkbox"
+                        name="selectStock"
+                        aria-label="商品を選択"
+                      />
+                    </td>
+                    <td style="text-align: center">102</td>
+                    <td style="text-align: center">コーヒー</td>
+                    <td style="text-align: center">130</td>
+                    <td style="text-align: center">20</td>
+                    <td style="text-align: center">
+                      <button
+                        class="update-btn"
+                        onclick="location.href='shopStockAdd.html'; return false;"
+                      >
+                        更新
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="radio-cell">
+                      <input
+                        type="checkbox"
+                        name="selectStock"
+                        aria-label="商品を選択"
+                      />
+                    </td>
+                    <td style="text-align: center">103</td>
+                    <td style="text-align: center">サイダー</td>
+                    <td style="text-align: center">110</td>
+                    <td style="text-align: center">10</td>
+                    <td style="text-align: center">
+                      <button
+                        class="update-btn"
+                        onclick="location.href='shopStockAdd.html'; return false;"
+                      >
+                        更新
+                      </button>
+                    </td>
+                  </tr>
+                  <!-- 他の商品も同様に -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="productlist-buttons button-row-split">
+          <button class="back-btn" onclick="history.back(); return false;">
+            戻る
+          </button>
+          <div class="action-buttons">
+            <button
+              class="delete-btn"
+              onclick="alert('選択した商品を削除します'); return false;"
+            >
+              削除
+            </button>
+            <button
+              class="add-btn primary"
+              onclick="location.href='shopStockAdd.html'; return false;"
+            >
+              追加
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

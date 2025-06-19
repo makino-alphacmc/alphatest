@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>商品検索・選択</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="productlist-box">
+        <h2>商品検索</h2>
+        <div class="table-wrapper">
+          <div
+            style="
+              background: #f7faff;
+              border-radius: 14px;
+              box-shadow: 0 2px 12px #b3d9ff55;
+              padding: 28px 24px 24px 24px;
+              margin-bottom: 36px;
+              border: 1.5px solid #b3d9ff;
+            "
+          >
+            <p class="note" style="margin-bottom: 18px">
+              ※商品を選択してください
+            </p>
+            <div
+              style="
+                background: #fff;
+                border-radius: 8px;
+                box-shadow: 0 1px 6px #b3d9ff33;
+                padding: 0 8px 12px 8px;
+                margin-bottom: 24px;
+              "
+            >
+              <div
+                class="order-history-scroll"
+                style="max-height: 220px; overflow-y: auto"
+              >
+                <table
+                  class="product-table sticky-header-table"
+                  style="margin-bottom: 0"
+                >
+                  <thead>
+                    <tr>
+                      <th class="radio-cell">選択</th>
+                      <th>商品名</th>
+                      <th>販売価格</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="radio-cell">
+                        <input
+                          type="checkbox"
+                          name="selectProduct"
+                          aria-label="この商品を選択"
+                        />
+                      </td>
+                      <td>メロンソーダ</td>
+                      <td>120</td>
+                    </tr>
+                    <tr>
+                      <td class="radio-cell">
+                        <input
+                          type="checkbox"
+                          name="selectProduct"
+                          aria-label="この商品を選択"
+                        />
+                      </td>
+                      <td>コーヒー</td>
+                      <td>130</td>
+                    </tr>
+                    <tr>
+                      <td class="radio-cell">
+                        <input
+                          type="checkbox"
+                          name="selectProduct"
+                          aria-label="この商品を選択"
+                        />
+                      </td>
+                      <td>サイダー</td>
+                      <td>125</td>
+                    </tr>
+                    <tr>
+                      <td class="radio-cell">
+                        <input
+                          type="checkbox"
+                          name="selectProduct"
+                          aria-label="この商品を選択"
+                        />
+                      </td>
+                      <td>コーラ</td>
+                      <td>140</td>
+                    </tr>
+                    <tr>
+                      <td class="radio-cell">
+                        <input
+                          type="checkbox"
+                          name="selectProduct"
+                          aria-label="この商品を選択"
+                        />
+                      </td>
+                      <td>紅茶</td>
+                      <td>110</td>
+                    </tr>
+                    <tr>
+                      <td class="radio-cell">
+                        <input
+                          type="checkbox"
+                          name="selectProduct"
+                          aria-label="この商品を選択"
+                        />
+                      </td>
+                      <td>カフェラテ</td>
+                      <td>150</td>
+                    </tr>
+                    <tr>
+                      <td class="radio-cell">
+                        <input
+                          type="checkbox"
+                          name="selectProduct"
+                          aria-label="この商品を選択"
+                        />
+                      </td>
+                      <td>アイスコーヒー</td>
+                      <td>135</td>
+                    </tr>
+                    <tr>
+                      <td class="radio-cell">
+                        <input
+                          type="checkbox"
+                          name="selectProduct"
+                          aria-label="この商品を選択"
+                        />
+                      </td>
+                      <td>サンドイッチ</td>
+                      <td>200</td>
+                    </tr>
+                    <tr>
+                      <td class="radio-cell">
+                        <input
+                          type="checkbox"
+                          name="selectProduct"
+                          aria-label="この商品を選択"
+                        />
+                      </td>
+                      <td>オレンジジュース</td>
+                      <td>120</td>
+                    </tr>
+                    <tr>
+                      <td class="radio-cell">
+                        <input
+                          type="checkbox"
+                          name="selectProduct"
+                          aria-label="この商品を選択"
+                        />
+                      </td>
+                      <td>ミルク</td>
+                      <td>100</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="productlist-buttons button-row-split">
+          <button class="back-btn" onclick="history.back(); return false;">
+            戻る
+          </button>
+          <button
+            class="order-btn primary"
+            onclick="location.href='branchSearchStep2.html'; return false;"
+          >
+            選択
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

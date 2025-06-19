@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>店舗検索・商品価格一覧</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="productlist-box">
+        <h2>店舗検索</h2>
+        <div class="table-wrapper">
+          <div
+            style="
+              background: #f7faff;
+              border-radius: 14px;
+              box-shadow: 0 2px 12px #b3d9ff55;
+              padding: 28px 24px 24px 24px;
+              margin-bottom: 36px;
+              border: 1.5px solid #b3d9ff;
+            "
+          >
+            <p class="note" style="margin-bottom: 18px">
+              ※店舗を選択して下さい
+            </p>
+            <div
+              style="
+                background: #fff;
+                border-radius: 8px;
+                box-shadow: 0 1px 6px #b3d9ff33;
+                padding: 12px 8px;
+                margin-bottom: 24px;
+              "
+            >
+              <div
+                class="order-history-scroll"
+                style="max-height: 220px; overflow-y: auto"
+              >
+                <table
+                  class="product-table sticky-header-table"
+                  style="margin-bottom: 0"
+                >
+                  <thead>
+                    <tr>
+                      <th class="radio-cell">選択</th>
+                      <th class="branch-name-th" style="width: 90%">店舗名</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="radio-cell">
+                        <input
+                          type="checkbox"
+                          name="selectBranch"
+                          aria-label="この店舗を選択"
+                        />
+                      </td>
+                      <td class="branch-name-td" style="width: 90%">新宿店</td>
+                    </tr>
+                    <tr>
+                      <td class="radio-cell">
+                        <input
+                          type="checkbox"
+                          name="selectBranch"
+                          aria-label="この店舗を選択"
+                        />
+                      </td>
+                      <td class="branch-name-td" style="width: 90%">渋谷店</td>
+                    </tr>
+                    <tr>
+                      <td class="radio-cell">
+                        <input
+                          type="checkbox"
+                          name="selectBranch"
+                          aria-label="この店舗を選択"
+                        />
+                      </td>
+                      <td class="branch-name-td" style="width: 90%">池袋店</td>
+                    </tr>
+                    <tr>
+                      <td class="radio-cell">
+                        <input
+                          type="checkbox"
+                          name="selectBranch"
+                          aria-label="この店舗を選択"
+                        />
+                      </td>
+                      <td class="branch-name-td" style="width: 90%">
+                        秋葉原店
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="radio-cell">
+                        <input
+                          type="checkbox"
+                          name="selectBranch"
+                          aria-label="この店舗を選択"
+                        />
+                      </td>
+                      <td class="branch-name-td" style="width: 90%">品川店</td>
+                    </tr>
+                    <tr>
+                      <td class="radio-cell">
+                        <input
+                          type="checkbox"
+                          name="selectBranch"
+                          aria-label="この店舗を選択"
+                        />
+                      </td>
+                      <td class="branch-name-td" style="width: 90%">上野店</td>
+                    </tr>
+                    <tr>
+                      <td class="radio-cell">
+                        <input
+                          type="checkbox"
+                          name="selectBranch"
+                          aria-label="この店舗を選択"
+                        />
+                      </td>
+                      <td class="branch-name-td" style="width: 90%">中野店</td>
+                    </tr>
+                    <tr>
+                      <td class="radio-cell">
+                        <input
+                          type="checkbox"
+                          name="selectBranch"
+                          aria-label="この店舗を選択"
+                        />
+                      </td>
+                      <td class="branch-name-td" style="width: 90%">
+                        吉祥寺店
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="radio-cell">
+                        <input
+                          type="checkbox"
+                          name="selectBranch"
+                          aria-label="この店舗を選択"
+                        />
+                      </td>
+                      <td class="branch-name-td" style="width: 90%">立川店</td>
+                    </tr>
+                    <tr>
+                      <td class="radio-cell">
+                        <input
+                          type="checkbox"
+                          name="selectBranch"
+                          aria-label="この店舗を選択"
+                        />
+                      </td>
+                      <td class="branch-name-td" style="width: 90%">町田店</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="productlist-buttons button-row-split">
+          <button class="back-btn" onclick="history.back(); return false;">
+            戻る
+          </button>
+          <button
+            class="order-btn primary"
+            onclick="location.href='prodSearchStep2.html'; return false;"
+          >
+            選択
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

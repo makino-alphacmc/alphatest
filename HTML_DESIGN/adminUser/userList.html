@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ユーザ一覧</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* カラム・データがはみ出す場合は折り返し */
+      .product-table th,
+      .product-table td {
+        white-space: normal;
+        word-break: break-all;
+      }
+      .product-table td {
+        vertical-align: middle;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="productlist-box">
+        <h2>ユーザ一覧</h2>
+        <div class="table-wrapper">
+          <div
+            style="
+              background: #f7faff;
+              border-radius: 14px;
+              box-shadow: 0 2px 12px #b3d9ff55;
+              padding: 28px 24px 24px 24px;
+              margin-bottom: 36px;
+              border: 1.5px solid #b3d9ff;
+            "
+          >
+            <div
+              style="
+                position: relative;
+                max-height: 320px;
+                overflow-y: auto;
+                border-radius: 8px;
+              "
+            >
+              <table class="product-table" style="margin-bottom: 0">
+                <thead
+                  style="
+                    position: sticky;
+                    top: 0;
+                    background: #f7faff;
+                    z-index: 1;
+                  "
+                >
+                  <tr>
+                    <th style="width: 60px; text-align: center">選択</th>
+                    <th>ユーザID</th>
+                    <th>名前</th>
+                    <th>メールアドレス</th>
+                    <th>電話番号</th>
+                    <th style="text-align: center">権限</th>
+                    <th style="width: 70px; text-align: center">更新</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align: center">
+                      <input
+                        type="radio"
+                        name="userSelect"
+                        aria-label="ユーザー選択: U001"
+                      />
+                    </td>
+                    <td>U001</td>
+                    <td>山田太郎</td>
+                    <td>yamada@example.com</td>
+                    <td>090-1234-5678</td>
+                    <td style="text-align: center">一般ユーザ</td>
+                    <td style="text-align: center">
+                      <button
+                        class="order-btn primary"
+                        style="min-width: 56px"
+                        onclick="location.href='user.html'; return false;"
+                      >
+                        更新
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: center">
+                      <input
+                        type="radio"
+                        name="userSelect"
+                        aria-label="ユーザー選択: U002"
+                      />
+                    </td>
+                    <td>U002</td>
+                    <td>佐藤花子</td>
+                    <td>hanako@example.com</td>
+                    <td>080-2345-6789</td>
+                    <td style="text-align: center">店舗担当者</td>
+                    <td style="text-align: center">
+                      <button
+                        class="order-btn primary"
+                        style="min-width: 56px"
+                        onclick="location.href='user.html'; return false;"
+                      >
+                        更新
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: center">
+                      <input
+                        type="radio"
+                        name="userSelect"
+                        aria-label="ユーザー選択: U003"
+                      />
+                    </td>
+                    <td>U003</td>
+                    <td>管理太郎</td>
+                    <td>kanri@example.com</td>
+                    <td>070-3456-7890</td>
+                    <td style="text-align: center">管理者</td>
+                    <td style="text-align: center">
+                      <button
+                        class="order-btn primary"
+                        style="min-width: 56px"
+                        onclick="location.href='user.html'; return false;"
+                      >
+                        更新
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: center">
+                      <input
+                        type="radio"
+                        name="userSelect"
+                        aria-label="ユーザー選択: U004"
+                      />
+                    </td>
+                    <td>U004</td>
+                    <td>鈴木一郎</td>
+                    <td>suzuki@example.com</td>
+                    <td>090-4567-8901</td>
+                    <td style="text-align: center">一般ユーザ</td>
+                    <td style="text-align: center">
+                      <button
+                        class="order-btn primary"
+                        style="min-width: 56px"
+                        onclick="location.href='user.html'; return false;"
+                      >
+                        更新
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: center">
+                      <input
+                        type="radio"
+                        name="userSelect"
+                        aria-label="ユーザー選択: U005"
+                      />
+                    </td>
+                    <td>U005</td>
+                    <td>田中美咲</td>
+                    <td>tanaka@example.com</td>
+                    <td>080-5678-9012</td>
+                    <td style="text-align: center">店舗担当者</td>
+                    <td style="text-align: center">
+                      <button
+                        class="order-btn primary"
+                        style="min-width: 56px"
+                        onclick="location.href='user.html'; return false;"
+                      >
+                        更新
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: center">
+                      <input
+                        type="radio"
+                        name="userSelect"
+                        aria-label="ユーザー選択: U006"
+                      />
+                    </td>
+                    <td>U006</td>
+                    <td>高橋健</td>
+                    <td>takahashi@example.com</td>
+                    <td>070-6789-0123</td>
+                    <td style="text-align: center">管理者</td>
+                    <td style="text-align: center">
+                      <button
+                        class="order-btn primary"
+                        style="min-width: 56px"
+                        onclick="location.href='user.html'; return false;"
+                      >
+                        更新
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: center">
+                      <input
+                        type="radio"
+                        name="userSelect"
+                        aria-label="ユーザー選択: U007"
+                      />
+                    </td>
+                    <td>U007</td>
+                    <td>中村葵</td>
+                    <td>nakamura@example.com</td>
+                    <td>090-7890-1234</td>
+                    <td style="text-align: center">一般ユーザ</td>
+                    <td style="text-align: center">
+                      <button
+                        class="order-btn primary"
+                        style="min-width: 56px"
+                        onclick="location.href='user.html'; return false;"
+                      >
+                        更新
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: center">
+                      <input
+                        type="radio"
+                        name="userSelect"
+                        aria-label="ユーザー選択: U008"
+                      />
+                    </td>
+                    <td>U008</td>
+                    <td>小林優</td>
+                    <td>kobayashi@example.com</td>
+                    <td>080-8901-2345</td>
+                    <td style="text-align: center">店舗担当者</td>
+                    <td style="text-align: center">
+                      <button
+                        class="order-btn primary"
+                        style="min-width: 56px"
+                        onclick="location.href='user.html'; return false;"
+                      >
+                        更新
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: center">
+                      <input
+                        type="radio"
+                        name="userSelect"
+                        aria-label="ユーザー選択: U009"
+                      />
+                    </td>
+                    <td>U009</td>
+                    <td>渡辺直樹</td>
+                    <td>watanabe@example.com</td>
+                    <td>070-9012-3456</td>
+                    <td style="text-align: center">管理者</td>
+                    <td style="text-align: center">
+                      <button
+                        class="order-btn primary"
+                        style="min-width: 56px"
+                        onclick="location.href='user.html'; return false;"
+                      >
+                        更新
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: center">
+                      <input
+                        type="radio"
+                        name="userSelect"
+                        aria-label="ユーザー選択: U010"
+                      />
+                    </td>
+                    <td>U010</td>
+                    <td>松本理恵</td>
+                    <td>matsumoto@example.com</td>
+                    <td>090-0123-4567</td>
+                    <td style="text-align: center">一般ユーザ</td>
+                    <td style="text-align: center">
+                      <button
+                        class="order-btn primary"
+                        style="min-width: 56px"
+                        onclick="location.href='user.html'; return false;"
+                      >
+                        更新
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="productlist-buttons button-row-split">
+          <button
+            class="back-btn"
+            onclick="location.href='menu.html'; return false;"
+            aria-label="メニューに戻る"
+          >
+            戻る
+          </button>
+          <button
+            class="add-btn"
+            onclick="location.href='userListNew.html'; return false;"
+            aria-label="新規ユーザ追加"
+          >
+            追加
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

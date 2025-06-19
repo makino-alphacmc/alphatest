@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>マイページ（注文一覧）</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="productlist-box">
+        <h2>マイページ（注文一覧）</h2>
+        <p class="note">
+          過去の注文履歴をご確認いただけます。注文状況はプルダウンで変更できます。
+        </p>
+
+        <div class="table-wrapper">
+          <table class="product-table">
+            <thead>
+              <tr>
+                <th>注文日</th>
+                <th>注文ID</th>
+                <th>店舗名</th>
+                <th>商品名</th>
+                <th>数量</th>
+                <th>合計金額</th>
+                <th>注文状況</th>
+                <th>操作</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2023/10/26</td>
+                <td>ORD001</td>
+                <td>新宿店</td>
+                <td>メロンソーダ</td>
+                <td>2</td>
+                <td>240円</td>
+                <td>
+                  <select>
+                    <option>発送待ち</option>
+                    <option>発送中</option>
+                    <option>発送済</option>
+                    <option selected>到着完了</option>
+                  </select>
+                </td>
+                <td style="text-align: center">
+                  <button class="update-btn">更新</button>
+                </td>
+              </tr>
+              <tr>
+                <td>2023/10/25</td>
+                <td>ORD002</td>
+                <td>渋谷店</td>
+                <td>コーヒー</td>
+                <td>1</td>
+                <td>130円</td>
+                <td>
+                  <select>
+                    <option>発送待ち</option>
+                    <option>発送中</option>
+                    <option>発送済</option>
+                    <option selected>到着完了</option>
+                  </select>
+                </td>
+                <td style="text-align: center">
+                  <button class="update-btn">更新</button>
+                </td>
+              </tr>
+              <tr>
+                <td>2023/10/20</td>
+                <td>ORD003</td>
+                <td>池袋店</td>
+                <td>サイダー</td>
+                <td>3</td>
+                <td>375円</td>
+                <td>
+                  <select>
+                    <option>発送待ち</option>
+                    <option selected>発送中</option>
+                    <option>発送済</option>
+                    <option>到着完了</option>
+                  </select>
+                </td>
+                <td style="text-align: center">
+                  <button class="update-btn">更新</button>
+                </td>
+              </tr>
+              <tr>
+                <td>2023/10/18</td>
+                <td>ORD004</td>
+                <td>新宿店</td>
+                <td>コーラ</td>
+                <td>1</td>
+                <td>140円</td>
+                <td>
+                  <select>
+                    <option>発送待ち</option>
+                    <option>発送中</option>
+                    <option selected>発送済</option>
+                    <option>到着完了</option>
+                  </select>
+                </td>
+                <td style="text-align: center">
+                  <button class="update-btn">更新</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="productlist-buttons" style="justify-content: center">
+          <button class="back-btn" onclick="history.back(); return false;">
+            戻る
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
