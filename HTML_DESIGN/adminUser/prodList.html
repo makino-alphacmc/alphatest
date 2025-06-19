@@ -27,7 +27,6 @@
             <div
               style="display: flex; align-items: center; margin-bottom: 10px"
             >
-              <span style="font-size: 1.6rem; margin-right: 10px">📦</span>
               <span
                 style="
                   font-weight: bold;
@@ -47,37 +46,176 @@
                 margin-bottom: 24px;
               "
             >
-              <table class="product-table" style="margin-bottom: 0">
-                <thead>
-                  <tr>
-                    <th>商品ID</th>
-                    <th>商品名</th>
-                    <th>カテゴリー</th>
-                    <th>価格</th>
-                    <th>在庫数</th>
-                    <th></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>P001</td>
-                    <td>プレミアムコーヒー</td>
-                    <td>ドリンク</td>
-                    <td>¥450</td>
-                    <td style="text-align: center">100</td>
-                    <td style="text-align: center">
-                      <button
-                        class="update-btn"
-                        onclick="location.href='prod.html'; return false;"
-                        aria-label="商品情報更新"
-                      >
-                        更新
-                      </button>
-                    </td>
-                  </tr>
-                  <!-- 他の商品データは同様の形式で追加 -->
-                </tbody>
-              </table>
+              <div
+                style="max-height: 350px; overflow-y: auto; border-radius: 8px"
+              >
+                <table
+                  class="product-table sticky-header-table"
+                  style="margin-bottom: 0"
+                >
+                  <thead>
+                    <tr>
+                      <th>商品ID</th>
+                      <th>商品名</th>
+                      <th>価格</th>
+                      <th>在庫数</th>
+                      <th scope="col">操作</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>P001</td>
+                      <td>プレミアムコーヒー</td>
+                      <td>¥450</td>
+                      <td style="text-align: center">100</td>
+                      <td style="text-align: center">
+                        <button
+                          class="update-btn"
+                          onclick="location.href='prod.html'; return false;"
+                          aria-label="商品情報更新"
+                        >
+                          更新
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>P002</td>
+                      <td>アイスティー</td>
+                      <td>¥350</td>
+                      <td style="text-align: center">80</td>
+                      <td style="text-align: center">
+                        <button
+                          class="update-btn"
+                          onclick="location.href='prod.html'; return false;"
+                          aria-label="商品情報更新"
+                        >
+                          更新
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>P003</td>
+                      <td>カフェラテ</td>
+                      <td>¥500</td>
+                      <td style="text-align: center">60</td>
+                      <td style="text-align: center">
+                        <button
+                          class="update-btn"
+                          onclick="location.href='prod.html'; return false;"
+                          aria-label="商品情報更新"
+                        >
+                          更新
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>P004</td>
+                      <td>抹茶ラテ</td>
+                      <td>¥520</td>
+                      <td style="text-align: center">40</td>
+                      <td style="text-align: center">
+                        <button
+                          class="update-btn"
+                          onclick="location.href='prod.html'; return false;"
+                          aria-label="商品情報更新"
+                        >
+                          更新
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>P005</td>
+                      <td>レモネード</td>
+                      <td>¥400</td>
+                      <td style="text-align: center">90</td>
+                      <td style="text-align: center">
+                        <button
+                          class="update-btn"
+                          onclick="location.href='prod.html'; return false;"
+                          aria-label="商品情報更新"
+                        >
+                          更新
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>P006</td>
+                      <td>サンドイッチ</td>
+                      <td>¥600</td>
+                      <td style="text-align: center">30</td>
+                      <td style="text-align: center">
+                        <button
+                          class="update-btn"
+                          onclick="location.href='prod.html'; return false;"
+                          aria-label="商品情報更新"
+                        >
+                          更新
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>P007</td>
+                      <td>クロワッサン</td>
+                      <td>¥250</td>
+                      <td style="text-align: center">120</td>
+                      <td style="text-align: center">
+                        <button
+                          class="update-btn"
+                          onclick="location.href='prod.html'; return false;"
+                          aria-label="商品情報更新"
+                        >
+                          更新
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>P008</td>
+                      <td>チーズケーキ</td>
+                      <td>¥480</td>
+                      <td style="text-align: center">50</td>
+                      <td style="text-align: center">
+                        <button
+                          class="update-btn"
+                          onclick="location.href='prod.html'; return false;"
+                          aria-label="商品情報更新"
+                        >
+                          更新
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>P009</td>
+                      <td>ショコラケーキ</td>
+                      <td>¥500</td>
+                      <td style="text-align: center">45</td>
+                      <td style="text-align: center">
+                        <button
+                          class="update-btn"
+                          onclick="location.href='prod.html'; return false;"
+                          aria-label="商品情報更新"
+                        >
+                          更新
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>P010</td>
+                      <td>ミネラルウォーター</td>
+                      <td>¥200</td>
+                      <td style="text-align: center">200</td>
+                      <td style="text-align: center">
+                        <button
+                          class="update-btn"
+                          onclick="location.href='prod.html'; return false;"
+                          aria-label="商品情報更新"
+                        >
+                          更新
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
             <div class="productlist-buttons button-row-split">
               <button

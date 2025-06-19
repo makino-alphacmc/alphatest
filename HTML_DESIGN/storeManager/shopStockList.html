@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
+    <div class="user-info-bar right">
+      <span class="user-info-name">name さんでログイン中</span>
+    </div>
     <div class="container">
       <div class="productlist-box">
         <h2>店舗在庫リスト</h2>
@@ -33,108 +36,119 @@
                 margin-bottom: 24px;
               "
             >
-              <table class="product-table" style="margin-bottom: 0">
-                <thead>
-                  <tr>
-                    <th class="radio-cell"></th>
-                    <th
-                      style="text-align: center"
-                      aria-label="商品ID"
-                      scope="col"
-                    >
-                      商品ID
-                    </th>
-                    <th
-                      style="text-align: center"
-                      aria-label="商品名"
-                      scope="col"
-                    >
-                      商品名
-                    </th>
-                    <th
-                      style="text-align: center"
-                      aria-label="金額"
-                      scope="col"
-                    >
-                      金額
-                    </th>
-                    <th
-                      style="text-align: center"
-                      aria-label="在庫数"
-                      scope="col"
-                    >
-                      在庫数
-                    </th>
-                    <th></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="radio-cell">
-                      <input
-                        type="checkbox"
-                        name="selectStock"
-                        aria-label="商品を選択"
-                      />
-                    </td>
-                    <td style="text-align: center">101</td>
-                    <td style="text-align: center">メロンソーダ</td>
-                    <td style="text-align: center">120</td>
-                    <td style="text-align: center">50</td>
-                    <td style="text-align: center">
-                      <button
-                        class="update-btn"
-                        onclick="location.href='shopStockAdd.html'; return false;"
+              <div
+                style="max-height: 220px; overflow-y: auto; border-radius: 8px"
+              >
+                <table class="product-table" style="margin-bottom: 0">
+                  <thead
+                    style="
+                      position: sticky;
+                      top: 0;
+                      background: #f7faff;
+                      z-index: 1;
+                    "
+                  >
+                    <tr>
+                      <th class="radio-cell">選択</th>
+                      <th
+                        style="text-align: center"
+                        aria-label="商品ID"
+                        scope="col"
                       >
-                        更新
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="radio-cell">
-                      <input
-                        type="checkbox"
-                        name="selectStock"
-                        aria-label="商品を選択"
-                      />
-                    </td>
-                    <td style="text-align: center">102</td>
-                    <td style="text-align: center">コーヒー</td>
-                    <td style="text-align: center">130</td>
-                    <td style="text-align: center">20</td>
-                    <td style="text-align: center">
-                      <button
-                        class="update-btn"
-                        onclick="location.href='shopStockAdd.html'; return false;"
+                        商品ID
+                      </th>
+                      <th
+                        style="text-align: center"
+                        aria-label="商品名"
+                        scope="col"
                       >
-                        更新
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="radio-cell">
-                      <input
-                        type="checkbox"
-                        name="selectStock"
-                        aria-label="商品を選択"
-                      />
-                    </td>
-                    <td style="text-align: center">103</td>
-                    <td style="text-align: center">サイダー</td>
-                    <td style="text-align: center">110</td>
-                    <td style="text-align: center">10</td>
-                    <td style="text-align: center">
-                      <button
-                        class="update-btn"
-                        onclick="location.href='shopStockAdd.html'; return false;"
+                        商品名
+                      </th>
+                      <th
+                        style="text-align: center"
+                        aria-label="金額"
+                        scope="col"
                       >
-                        更新
-                      </button>
-                    </td>
-                  </tr>
-                  <!-- 他の商品も同様に -->
-                </tbody>
-              </table>
+                        金額
+                      </th>
+                      <th
+                        style="text-align: center"
+                        aria-label="在庫数"
+                        scope="col"
+                      >
+                        在庫数
+                      </th>
+                      <th>操作</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="radio-cell">
+                        <input
+                          type="checkbox"
+                          name="selectStock"
+                          aria-label="商品を選択"
+                        />
+                      </td>
+                      <td style="text-align: center">101</td>
+                      <td style="text-align: center">メロンソーダ</td>
+                      <td style="text-align: center">120</td>
+                      <td style="text-align: center">50</td>
+                      <td style="text-align: center">
+                        <button
+                          class="update-btn"
+                          onclick="location.href='shopStock.html'; return false;"
+                        >
+                          更新
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="radio-cell">
+                        <input
+                          type="checkbox"
+                          name="selectStock"
+                          aria-label="商品を選択"
+                        />
+                      </td>
+                      <td style="text-align: center">102</td>
+                      <td style="text-align: center">コーヒー</td>
+                      <td style="text-align: center">130</td>
+                      <td style="text-align: center">20</td>
+                      <td style="text-align: center">
+                        <button
+                          class="update-btn"
+                          onclick="location.href='shopStock.html'; return false;"
+                        >
+                          更新
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="radio-cell">
+                        <input
+                          type="checkbox"
+                          name="selectStock"
+                          aria-label="商品を選択"
+                        />
+                      </td>
+                      <td style="text-align: center">103</td>
+                      <td style="text-align: center">サイダー</td>
+                      <td style="text-align: center">110</td>
+                      <td style="text-align: center">10</td>
+                      <td style="text-align: center">
+                        <button
+                          class="update-btn"
+                          onclick="location.href='shopStock.html'; return false;"
+                        >
+                          更新
+                        </button>
+                      </td>
+                    </tr>
+                    <!-- 他の商品も同様に -->
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         </div>

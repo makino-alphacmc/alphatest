@@ -3,55 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>商品情報修正</title>
+    <title>店舗在庫編集</title>
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
+    <div class="user-info-bar right">
+      <span class="user-info-name">name さんでログイン中</span>
+    </div>
     <div class="container">
       <div
         class="productlist-box"
         style="background: transparent; box-shadow: none; border: none"
       >
         <form class="stock-form">
-          <h2 class="stock-form-title">商品情報修正</h2>
+          <h2 class="stock-form-title">店舗在庫編集</h2>
           <div class="form-group">
-            <label for="prodId">商品ID</label>
+            <label for="productId">商品ID</label>
             <input
               type="text"
-              id="prodId"
-              name="prodId"
-              value="P001"
+              id="productId"
+              name="productId"
+              value=""
+              required
               readonly
             />
           </div>
           <div class="form-group">
-            <label for="prodName">商品名</label>
+            <label for="productName">商品名</label>
             <input
               type="text"
-              id="prodName"
-              name="prodName"
-              value="プレミアムコーヒー"
+              id="productName"
+              name="productName"
+              value=""
               required
             />
           </div>
           <div class="form-group">
-            <label for="category">カテゴリー</label>
-            <input
-              type="text"
-              id="category"
-              name="category"
-              value="ドリンク"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <label for="price">価格</label>
+            <label for="price">金額</label>
             <input
               type="number"
               id="price"
               name="price"
-              value="450"
               min="0"
+              value=""
               required
             />
           </div>
@@ -61,15 +55,15 @@
               type="number"
               id="stock"
               name="stock"
-              value="100"
               min="0"
+              value=""
               required
             />
           </div>
           <div class="productlist-buttons button-row-split">
             <button
               class="back-btn"
-              onclick="location.href='prodList.html'; return false;"
+              onclick="location.href='shopStockList.html'; return false;"
             >
               キャンセル
             </button>
