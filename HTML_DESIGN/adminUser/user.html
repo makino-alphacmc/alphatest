@@ -20,6 +20,14 @@
           </div>
           <div class="form-group">
             <label for="shopId">店舗ID</label>
+            <!--
+              サーバーサイドで権限ごとに下記inputを出し分ける
+              例：
+              managerの場合：
+              <input type="text" id="shopId" name="shopId" required>
+              それ以外の場合：
+              <input type="text" id="shopId" name="shopId" required disabled style="background:#eee; color:#888;">
+            -->
             <input type="text" id="shopId" name="shopId" required />
           </div>
           <div class="form-group">
@@ -60,7 +68,8 @@
           </div>
           <div class="form-group">
             <label for="role">権限</label>
-            <select id="role" name="role" required onchange="toggleShopId()">
+            <select id="role" name="role" required>
+              <option value="" disabled selected>権限を選択してください</option>
               <option value="user">一般ユーザ</option>
               <option value="manager">店舗担当者</option>
               <option value="admin">管理者</option>
@@ -78,21 +87,5 @@
         </form>
       </div>
     </div>
-    <script>
-      function toggleShopId() {
-        var role = document.getElementById("role").value;
-        var shopId = document.getElementById("shopId");
-        if (role === "manager") {
-          shopId.disabled = false;
-          shopId.style.background = "";
-          shopId.style.color = "";
-        } else {
-          shopId.disabled = true;
-          shopId.style.background = "#eee";
-          shopId.style.color = "#888";
-        }
-      }
-      window.onload = toggleShopId;
-    </script>
   </body>
 </html>

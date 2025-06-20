@@ -9,17 +9,6 @@
       href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&display=swap"
       rel="stylesheet"
     />
-    <style>
-      /* カラム・データがはみ出す場合は折り返し */
-      .product-table th,
-      .product-table td {
-        white-space: normal;
-        word-break: break-all;
-      }
-      .product-table td {
-        vertical-align: middle;
-      }
-    </style>
   </head>
   <body>
     <div class="container">
@@ -356,11 +345,7 @@
           >
             追加
           </button>
-          <button
-            class="delete-btn"
-            onclick="alert('選択したユーザを削除します'); return false;"
-            aria-label="選択したユーザを削除"
-          >
+          <button class="delete-btn" aria-label="選択したユーザを削除">
             削除
           </button>
         </div>

@@ -7,358 +7,118 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
+    <div class="user-info-bar right">
+      <span class="user-info-name">name さんでログイン中</span>
+    </div>
     <div class="container">
       <div class="productlist-box">
         <h1>店舗選択</h1>
         <h2>選択商品一覧</h2>
 
         <!-- 選択商品の表示 -->
-        <div
-          style="
-            background: #f7faff;
-            border-radius: 14px;
-            box-shadow: 0 2px 12px #b3d9ff55;
-            padding: 28px 24px 20px 24px;
-            margin-bottom: 36px;
-            border: 1.5px solid #b3d9ff;
-          "
-        >
-          <div style="display: flex; align-items: center; margin-bottom: 20px">
-            <span
-              style="
-                font-weight: bold;
-                font-size: 1.25rem;
-                color: #223a54;
-                letter-spacing: 0.04em;
-              "
-              >選択中の商品</span
-            >
+        <div class="branchstep2-selected-outer">
+          <div class="branchstep2-selected-title">
+            <span>選択中の商品</span>
           </div>
-          <div
-            style="
-              background: #fff;
-              border-radius: 8px;
-              box-shadow: 0 1px 6px #b3d9ff33;
-              padding: 16px;
-            "
-          >
-            <div
-              style="
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-                gap: 16px;
-              "
-            >
-              <div
-                style="
-                  background: #e8f4fd;
-                  border-radius: 8px;
-                  padding: 12px;
-                  border-left: 4px solid #2196f3;
-                "
-              >
-                <div
-                  style="font-weight: bold; color: #1976d2; margin-bottom: 4px"
-                >
-                  コーヒー
-                </div>
-              </div>
-              <div
-                style="
-                  background: #e8f4fd;
-                  border-radius: 8px;
-                  padding: 12px;
-                  border-left: 4px solid #2196f3;
-                "
-              >
-                <div
-                  style="font-weight: bold; color: #1976d2; margin-bottom: 4px"
-                >
-                  メロンソーダ
-                </div>
-              </div>
-              <div
-                style="
-                  background: #e8f4fd;
-                  border-radius: 8px;
-                  padding: 12px;
-                  border-left: 4px solid #2196f3;
-                "
-              >
-                <div
-                  style="font-weight: bold; color: #1976d2; margin-bottom: 4px"
-                >
-                  サンドイッチ
-                </div>
-              </div>
-              <div
-                style="
-                  background: #e8f4fd;
-                  border-radius: 8px;
-                  padding: 12px;
-                  border-left: 4px solid #2196f3;
-                "
-              >
-                <div
-                  style="font-weight: bold; color: #1976d2; margin-bottom: 4px"
-                >
-                  紅茶
-                </div>
-              </div>
-              <div
-                style="
-                  background: #e8f4fd;
-                  border-radius: 8px;
-                  padding: 12px;
-                  border-left: 4px solid #2196f3;
-                "
-              >
-                <div
-                  style="font-weight: bold; color: #1976d2; margin-bottom: 4px"
-                >
-                  カフェラテ
-                </div>
-              </div>
+          <div class="branchstep2-selected-list">
+            <div class="branchstep2-selected-item">
+              <div class="branchstep2-selected-item-text">コーヒー</div>
+            </div>
+            <div class="branchstep2-selected-item">
+              <div class="branchstep2-selected-item-text">メロンソーダ</div>
+            </div>
+            <div class="branchstep2-selected-item">
+              <div class="branchstep2-selected-item-text">サンドイッチ</div>
+            </div>
+            <div class="branchstep2-selected-item">
+              <div class="branchstep2-selected-item-text">紅茶</div>
+            </div>
+            <div class="branchstep2-selected-item">
+              <div class="branchstep2-selected-item-text">カフェラテ</div>
             </div>
           </div>
         </div>
 
         <h2>店舗選択</h2>
         <div class="table-wrapper">
-          <div
-            style="
-              background: #f7faff;
-              border-radius: 14px;
-              box-shadow: 0 2px 12px #b3d9ff55;
-              padding: 28px 24px 20px 24px;
-              margin-bottom: 36px;
-              border: 1.5px solid #b3d9ff;
-            "
-          >
-            <div
-              style="display: flex; align-items: center; margin-bottom: 10px"
-            >
-              <span
-                style="
-                  font-weight: bold;
-                  font-size: 1.25rem;
-                  color: #223a54;
-                  letter-spacing: 0.04em;
-                "
-                >購入店舗を選択してください</span
-              >
+          <div class="branchstep2-table-outer">
+            <div class="branchstep2-table-header">
+              <span>購入店舗を選択してください</span>
             </div>
-            <div style="margin-bottom: 14px; color: #555; font-size: 0.98rem">
+            <div class="branchstep2-table-desc">
               上記の商品を購入する店舗を1つ選択してください。すべての商品は同じ店舗から購入されます。
             </div>
-            <div
-              style="
-                background: #fff;
-                border-radius: 8px;
-                box-shadow: 0 1px 6px #b3d9ff33;
-                padding: 12px 8px;
-              "
-            >
-              <!-- ヘッダーテーブル（固定） -->
-              <table
-                class="product-table"
-                style="
-                  margin-bottom: 0;
-                  table-layout: fixed;
-                  width: 100%;
-                  border-collapse: collapse;
-                "
-                aria-label="店舗選択テーブルヘッダー"
-              >
-                <thead style="background: #e5f0ff">
+            <div class="branchstep2-table-inner">
+              <table class="product-table branchstep2-table">
+                <thead>
                   <tr>
-                    <th
-                      style="
-                        width: 60px;
-                        text-align: center;
-                        padding: 12px 8px;
-                        border-bottom: 2px solid #b3d9ff;
-                      "
-                    >
-                      選択
-                    </th>
-                    <th
-                      style="
-                        text-align: center;
-                        padding: 12px 8px;
-                        border-bottom: 2px solid #b3d9ff;
-                      "
-                    >
-                      店舗名
-                    </th>
+                    <th class="branchstep2-table-th">選択</th>
+                    <th class="branchstep2-table-th">店舗名</th>
                   </tr>
                 </thead>
               </table>
-
-              <!-- ボディテーブル（スクロール可能） -->
-              <div
-                style="max-height: 300px; overflow-y: auto; border-radius: 8px"
-              >
-                <table
-                  class="product-table"
-                  style="
-                    margin-bottom: 0;
-                    table-layout: fixed;
-                    width: 100%;
-                    border-collapse: collapse;
-                  "
-                  aria-label="店舗選択テーブルボディ"
-                >
+              <div class="branchstep2-table-scroll">
+                <table class="product-table branchstep2-table">
                   <tbody>
                     <tr>
-                      <td
-                        style="
-                          width: 60px;
-                          text-align: center;
-                          padding: 12px 8px;
-                          border-bottom: 1px solid #e0e0e0;
-                        "
-                      >
+                      <td class="branchstep2-table-td">
                         <input
                           type="radio"
                           name="selectBranch"
                           aria-label="新宿店を選択"
                         />
                       </td>
-                      <td
-                        style="
-                          text-align: center;
-                          padding: 12px 8px;
-                          border-bottom: 1px solid #e0e0e0;
-                        "
-                      >
-                        新宿店
-                      </td>
+                      <td class="branchstep2-table-td">新宿店</td>
                     </tr>
                     <tr>
-                      <td
-                        style="
-                          width: 60px;
-                          text-align: center;
-                          padding: 12px 8px;
-                          border-bottom: 1px solid #e0e0e0;
-                        "
-                      >
+                      <td class="branchstep2-table-td">
                         <input
                           type="radio"
                           name="selectBranch"
                           aria-label="渋谷店を選択"
                         />
                       </td>
-                      <td
-                        style="
-                          text-align: center;
-                          padding: 12px 8px;
-                          border-bottom: 1px solid #e0e0e0;
-                        "
-                      >
-                        渋谷店
-                      </td>
+                      <td class="branchstep2-table-td">渋谷店</td>
                     </tr>
                     <tr>
-                      <td
-                        style="
-                          width: 60px;
-                          text-align: center;
-                          padding: 12px 8px;
-                          border-bottom: 1px solid #e0e0e0;
-                        "
-                      >
+                      <td class="branchstep2-table-td">
                         <input
                           type="radio"
                           name="selectBranch"
                           aria-label="池袋店を選択"
                         />
                       </td>
-                      <td
-                        style="
-                          text-align: center;
-                          padding: 12px 8px;
-                          border-bottom: 1px solid #e0e0e0;
-                        "
-                      >
-                        池袋店
-                      </td>
+                      <td class="branchstep2-table-td">池袋店</td>
                     </tr>
                     <tr>
-                      <td
-                        style="
-                          width: 60px;
-                          text-align: center;
-                          padding: 12px 8px;
-                          border-bottom: 1px solid #e0e0e0;
-                        "
-                      >
+                      <td class="branchstep2-table-td">
                         <input
                           type="radio"
                           name="selectBranch"
                           aria-label="秋葉原店を選択"
                         />
                       </td>
-                      <td
-                        style="
-                          text-align: center;
-                          padding: 12px 8px;
-                          border-bottom: 1px solid #e0e0e0;
-                        "
-                      >
-                        秋葉原店
-                      </td>
+                      <td class="branchstep2-table-td">秋葉原店</td>
                     </tr>
                     <tr>
-                      <td
-                        style="
-                          width: 60px;
-                          text-align: center;
-                          padding: 12px 8px;
-                          border-bottom: 1px solid #e0e0e0;
-                        "
-                      >
+                      <td class="branchstep2-table-td">
                         <input
                           type="radio"
                           name="selectBranch"
                           aria-label="品川店を選択"
                         />
                       </td>
-                      <td
-                        style="
-                          text-align: center;
-                          padding: 12px 8px;
-                          border-bottom: 1px solid #e0e0e0;
-                        "
-                      >
-                        品川店
-                      </td>
+                      <td class="branchstep2-table-td">品川店</td>
                     </tr>
                     <tr>
-                      <td
-                        style="
-                          width: 60px;
-                          text-align: center;
-                          padding: 12px 8px;
-                          border-bottom: 1px solid #e0e0e0;
-                        "
-                      >
+                      <td class="branchstep2-table-td">
                         <input
                           type="radio"
                           name="selectBranch"
                           aria-label="上野店を選択"
                         />
                       </td>
-                      <td
-                        style="
-                          text-align: center;
-                          padding: 12px 8px;
-                          border-bottom: 1px solid #e0e0e0;
-                        "
-                      >
-                        上野店
-                      </td>
+                      <td class="branchstep2-table-td">上野店</td>
                     </tr>
                   </tbody>
                 </table>

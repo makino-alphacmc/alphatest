@@ -14,89 +14,66 @@
       <div class="productlist-box">
         <h2>店舗在庫リスト</h2>
         <div class="table-wrapper">
-          <div
-            style="
-              background: #f7faff;
-              border-radius: 14px;
-              box-shadow: 0 2px 12px #b3d9ff55;
-              padding: 28px 24px 24px 24px;
-              margin-bottom: 36px;
-              border: 1.5px solid #b3d9ff;
-            "
-          >
-            <p class="note" style="margin-bottom: 18px">
+          <div class="smstocklist-outer-box">
+            <p class="note smstocklist-note">
               登録されている商品の在庫一覧です。
             </p>
-            <div
-              style="
-                background: #fff;
-                border-radius: 8px;
-                box-shadow: 0 1px 6px #b3d9ff33;
-                padding: 12px 8px;
-                margin-bottom: 24px;
-              "
-            >
-              <div
-                style="max-height: 220px; overflow-y: auto; border-radius: 8px"
-              >
-                <table class="product-table" style="margin-bottom: 0">
-                  <thead
-                    style="
-                      position: sticky;
-                      top: 0;
-                      background: #f7faff;
-                      z-index: 1;
-                    "
-                  >
+            <div class="smstocklist-inner-box">
+              <div class="smstocklist-scroll">
+                <table class="product-table smstocklist-table">
+                  <thead class="smstocklist-thead">
                     <tr>
-                      <th class="radio-cell" style="text-align: center">
-                        選択
-                      </th>
+                      <th class="radio-cell smstocklist-th-center">選択</th>
                       <th
-                        style="text-align: center"
+                        class="smstocklist-th-center"
                         aria-label="商品ID"
                         scope="col"
                       >
                         商品ID
                       </th>
                       <th
-                        style="text-align: center"
+                        class="smstocklist-th-center"
                         aria-label="商品名"
                         scope="col"
                       >
                         商品名
                       </th>
                       <th
-                        style="text-align: center"
+                        class="smstocklist-th-center"
                         aria-label="金額"
                         scope="col"
                       >
                         販売価格
                       </th>
                       <th
-                        style="text-align: center"
+                        class="smstocklist-th-center"
                         aria-label="在庫数"
                         scope="col"
                       >
                         在庫数
                       </th>
-                      <th style="text-align: center">操作</th>
+                      <th class="smstocklist-th-center">操作</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td class="radio-cell" style="text-align: center">
-                        <input
-                          type="checkbox"
-                          name="selectStock"
-                          aria-label="商品を選択"
-                        />
+                      <td class="radio-cell smstocklist-td-center">
+                        <label class="smstocklist-radio-label">
+                          <input
+                            type="radio"
+                            name="selectStock"
+                            id="stock-radio-melon"
+                          />
+                          <span class="visually-hidden"
+                            >メロンソーダを選択</span
+                          >
+                        </label>
                       </td>
-                      <td style="text-align: center">101</td>
-                      <td style="text-align: center">メロンソーダ</td>
-                      <td style="text-align: center">120</td>
-                      <td style="text-align: center">50</td>
-                      <td style="text-align: center">
+                      <td class="smstocklist-td-center">101</td>
+                      <td class="smstocklist-td-center">メロンソーダ</td>
+                      <td class="smstocklist-td-center">120</td>
+                      <td class="smstocklist-td-center">50</td>
+                      <td class="smstocklist-td-center">
                         <button
                           class="update-btn"
                           onclick="location.href='shopStock.html'; return false;"
@@ -106,18 +83,21 @@
                       </td>
                     </tr>
                     <tr>
-                      <td class="radio-cell" style="text-align: center">
-                        <input
-                          type="checkbox"
-                          name="selectStock"
-                          aria-label="商品を選択"
-                        />
+                      <td class="radio-cell smstocklist-td-center">
+                        <label class="smstocklist-radio-label">
+                          <input
+                            type="radio"
+                            name="selectStock"
+                            id="stock-radio-coffee"
+                          />
+                          <span class="visually-hidden">コーヒーを選択</span>
+                        </label>
                       </td>
-                      <td style="text-align: center">102</td>
-                      <td style="text-align: center">コーヒー</td>
-                      <td style="text-align: center">130</td>
-                      <td style="text-align: center">20</td>
-                      <td style="text-align: center">
+                      <td class="smstocklist-td-center">102</td>
+                      <td class="smstocklist-td-center">コーヒー</td>
+                      <td class="smstocklist-td-center">130</td>
+                      <td class="smstocklist-td-center">20</td>
+                      <td class="smstocklist-td-center">
                         <button
                           class="update-btn"
                           onclick="location.href='shopStock.html'; return false;"
@@ -127,18 +107,21 @@
                       </td>
                     </tr>
                     <tr>
-                      <td class="radio-cell" style="text-align: center">
-                        <input
-                          type="checkbox"
-                          name="selectStock"
-                          aria-label="商品を選択"
-                        />
+                      <td class="radio-cell smstocklist-td-center">
+                        <label class="smstocklist-radio-label">
+                          <input
+                            type="radio"
+                            name="selectStock"
+                            id="stock-radio-cider"
+                          />
+                          <span class="visually-hidden">サイダーを選択</span>
+                        </label>
                       </td>
-                      <td style="text-align: center">103</td>
-                      <td style="text-align: center">サイダー</td>
-                      <td style="text-align: center">110</td>
-                      <td style="text-align: center">10</td>
-                      <td style="text-align: center">
+                      <td class="smstocklist-td-center">103</td>
+                      <td class="smstocklist-td-center">サイダー</td>
+                      <td class="smstocklist-td-center">110</td>
+                      <td class="smstocklist-td-center">10</td>
+                      <td class="smstocklist-td-center">
                         <button
                           class="update-btn"
                           onclick="location.href='shopStock.html'; return false;"

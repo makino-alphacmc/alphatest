@@ -10,9 +10,7 @@
       rel="stylesheet"
     />
     <style>
-      th.checkbox-cell {
-        white-space: nowrap;
-      }
+      /* 削除：style.cssに移行 */
     </style>
   </head>
   <body>
@@ -52,35 +50,27 @@
             <div class="order-history-inner">
               <div class="order-history-scroll full-height">
                 <table class="product-table order-history-table">
-                  <thead
-                    style="
-                      position: sticky;
-                      top: 0;
-                      background: #f7faff;
-                      z-index: 1;
-                    "
-                  >
+                  <thead class="orderlist-thead">
                     <tr>
                       <th
-                        class="checkbox-cell"
-                        style="text-align: center"
+                        class="orderlist-checkbox-cell"
                         aria-label="選択"
                         scope="col"
                       >
                         選択
                       </th>
-                      <th style="text-align: center">注文ID</th>
-                      <th style="text-align: center">注文日時</th>
-                      <th style="text-align: center">店舗名</th>
-                      <th style="text-align: center">商品名</th>
-                      <th style="text-align: center">注文数量</th>
-                      <th style="text-align: center">合計金額</th>
-                      <th style="text-align: center">ステータス</th>
+                      <th class="orderlist-th-center">注文ID</th>
+                      <th class="orderlist-th-center">注文日時</th>
+                      <th class="orderlist-th-center">店舗名</th>
+                      <th class="orderlist-th-center">商品名</th>
+                      <th class="orderlist-th-center">注文数量</th>
+                      <th class="orderlist-th-center">合計金額</th>
+                      <th class="orderlist-th-center">ステータス</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td class="checkbox-cell">
+                      <td class="orderlist-checkbox-cell">
                         <input type="checkbox" aria-label="この注文を選択" />
                       </td>
                       <td>O20240601-001</td>
@@ -92,7 +82,7 @@
                       <td>到着完了</td>
                     </tr>
                     <tr>
-                      <td class="checkbox-cell">
+                      <td class="orderlist-checkbox-cell">
                         <input type="checkbox" aria-label="この注文を選択" />
                       </td>
                       <td>O20240528-002</td>
@@ -104,7 +94,7 @@
                       <td>注文取消</td>
                     </tr>
                     <tr>
-                      <td class="checkbox-cell">
+                      <td class="orderlist-checkbox-cell">
                         <input type="checkbox" aria-label="この注文を選択" />
                       </td>
                       <td>O20240520-003</td>
@@ -116,7 +106,7 @@
                       <td>到着完了</td>
                     </tr>
                     <tr>
-                      <td class="checkbox-cell">
+                      <td class="orderlist-checkbox-cell">
                         <input type="checkbox" aria-label="この注文を選択" />
                       </td>
                       <td>O20240515-004</td>
@@ -128,7 +118,7 @@
                       <td>到着完了</td>
                     </tr>
                     <tr>
-                      <td class="checkbox-cell">
+                      <td class="orderlist-checkbox-cell">
                         <input type="checkbox" aria-label="この注文を選択" />
                       </td>
                       <td>O20240510-005</td>
@@ -140,7 +130,7 @@
                       <td>到着完了</td>
                     </tr>
                     <tr>
-                      <td class="checkbox-cell">
+                      <td class="orderlist-checkbox-cell">
                         <input type="checkbox" aria-label="この注文を選択" />
                       </td>
                       <td>O20240505-006</td>
@@ -152,7 +142,7 @@
                       <td>注文取消</td>
                     </tr>
                     <tr>
-                      <td class="checkbox-cell">
+                      <td class="orderlist-checkbox-cell">
                         <input type="checkbox" aria-label="この注文を選択" />
                       </td>
                       <td>O20240430-007</td>
@@ -164,7 +154,7 @@
                       <td>到着完了</td>
                     </tr>
                     <tr>
-                      <td class="checkbox-cell">
+                      <td class="orderlist-checkbox-cell">
                         <input type="checkbox" aria-label="この注文を選択" />
                       </td>
                       <td>O20240425-008</td>
@@ -176,7 +166,7 @@
                       <td>到着完了</td>
                     </tr>
                     <tr>
-                      <td class="checkbox-cell">
+                      <td class="orderlist-checkbox-cell">
                         <input type="checkbox" aria-label="この注文を選択" />
                       </td>
                       <td>O20240420-009</td>
@@ -188,7 +178,7 @@
                       <td>到着完了</td>
                     </tr>
                     <tr>
-                      <td class="checkbox-cell">
+                      <td class="orderlist-checkbox-cell">
                         <input type="checkbox" aria-label="この注文を選択" />
                       </td>
                       <td>O20240415-010</td>
@@ -200,7 +190,7 @@
                       <td>注文取消</td>
                     </tr>
                     <tr>
-                      <td class="checkbox-cell">
+                      <td class="orderlist-checkbox-cell">
                         <input type="checkbox" aria-label="この注文を選択" />
                       </td>
                       <td>O20240410-011</td>
@@ -212,7 +202,7 @@
                       <td>到着完了</td>
                     </tr>
                     <tr>
-                      <td class="checkbox-cell">
+                      <td class="orderlist-checkbox-cell">
                         <input type="checkbox" aria-label="この注文を選択" />
                       </td>
                       <td>O20240405-012</td>

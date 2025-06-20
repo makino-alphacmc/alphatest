@@ -974,3 +974,637 @@ shopOrderList 用
   white-space: nowrap !important;
   border: 0 !important;
 }
+
+/* adminUser/shopList.html 用 */
+.shoplist-outer-box {
+  background: #f7faff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px #b3d9ff55;
+  padding: 28px 24px 24px 24px;
+  margin-bottom: 36px;
+  border: 1.5px solid #b3d9ff;
+}
+.shoplist-inner-box {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px #b3d9ff33;
+  padding: 12px 8px;
+  margin-bottom: 24px;
+}
+.shoplist-table {
+  margin-bottom: 0;
+}
+.shoplist-thead {
+  position: sticky;
+  top: 0;
+  background: #f7faff;
+  z-index: 1;
+}
+.shoplist-th-center,
+.shoplist-td-center {
+  text-align: center;
+}
+.shoplist-tbody {
+  display: block;
+  max-height: 320px;
+  overflow-y: auto;
+  width: 100%;
+}
+.shoplist-tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+/* adminUser/userList.html 用: テーブル折り返し・縦中央揃え */
+.product-table th,
+.product-table td {
+  white-space: normal;
+  word-break: break-all;
+}
+.product-table td {
+  vertical-align: middle;
+}
+
+/* generalUser/branchSearch.html 用 */
+.branchsearch-outer-box {
+  background: #f7faff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px #b3d9ff55;
+  padding: 28px 24px 24px 24px;
+  margin-bottom: 36px;
+  border: 1.5px solid #b3d9ff;
+}
+.branchsearch-note {
+  margin-bottom: 18px;
+}
+.branchsearch-inner-box {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px #b3d9ff33;
+  padding: 12px 8px;
+  margin-bottom: 24px;
+}
+.branchsearch-scroll {
+  max-height: 220px;
+  overflow-y: auto;
+}
+.branchsearch-table {
+  margin-bottom: 0;
+}
+.branchsearch-tbody {
+  display: block;
+  max-height: 220px;
+  overflow-y: auto;
+  width: 100%;
+}
+.branchsearch-tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+/* generalUser/branchSearchStep2.html 用（体裁厳守） */
+.branchstep2-selected-outer {
+  background: #f7faff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px #b3d9ff55;
+  padding: 28px 24px 20px 24px;
+  margin-bottom: 36px;
+  border: 1.5px solid #b3d9ff;
+}
+.branchstep2-selected-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.branchstep2-selected-title span {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #223a54;
+  letter-spacing: 0.04em;
+}
+.branchstep2-selected-list {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px #b3d9ff33;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+.branchstep2-selected-item {
+  background: #e8f4fd;
+  border-radius: 8px;
+  padding: 12px;
+  border-left: 4px solid #2196f3;
+}
+.branchstep2-selected-item-text {
+  font-weight: bold;
+  color: #1976d2;
+  margin-bottom: 4px;
+}
+.branchstep2-table-outer {
+  background: #f7faff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px #b3d9ff55;
+  padding: 28px 24px 20px 24px;
+  margin-bottom: 36px;
+  border: 1.5px solid #b3d9ff;
+}
+.branchstep2-table-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.branchstep2-table-header span {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #223a54;
+  letter-spacing: 0.04em;
+}
+.branchstep2-table-desc {
+  margin-bottom: 14px;
+  color: #555;
+  font-size: 0.98rem;
+}
+.branchstep2-table-inner {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px #b3d9ff33;
+  padding: 12px 8px;
+}
+.branchstep2-table {
+  margin-bottom: 0;
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+}
+.branchstep2-table-th {
+  width: 60px;
+  text-align: center;
+  padding: 12px 8px;
+  border-bottom: 2px solid #b3d9ff;
+  background: #e5f0ff;
+}
+.branchstep2-table-th:last-child {
+  width: auto;
+}
+.branchstep2-table-scroll {
+  max-height: 300px;
+  overflow-y: auto;
+  border-radius: 8px;
+}
+.branchstep2-table-td {
+  text-align: center;
+  padding: 12px 8px;
+  border-bottom: 1px solid #e0e0e0;
+  width: 60px;
+}
+.branchstep2-table-td:last-child {
+  width: auto;
+}
+
+/* generalUser/orderCart.html 用（体裁厳守） */
+.ordercart-outer-box {
+  background: #f7faff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px #b3d9ff55;
+  padding: 28px 24px 24px 24px;
+  margin-bottom: 36px;
+  border: 1.5px solid #b3d9ff;
+}
+.ordercart-note {
+  margin-bottom: 18px;
+}
+.ordercart-inner-box {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px #b3d9ff33;
+  padding: 12px 8px;
+  margin-bottom: 24px;
+}
+.ordercart-scroll {
+  max-height: 300px;
+  overflow-y: auto;
+}
+.ordercart-table {
+  margin-bottom: 0;
+}
+.ordercart-thead {
+  position: sticky;
+  top: 0;
+  background: #f7faff;
+  z-index: 1;
+}
+.ordercart-th {
+  text-align: center;
+}
+.ordercart-th-id {
+  width: 10%;
+}
+.ordercart-th-shop {
+  width: 15%;
+}
+.ordercart-th-prod {
+  width: 20%;
+}
+.ordercart-th-price {
+  width: 15%;
+}
+.ordercart-th-stock {
+  width: 15%;
+}
+.ordercart-th-qty {
+  width: 15%;
+}
+.ordercart-th-total {
+  width: 10%;
+}
+.ordercart-td {
+  text-align: center;
+}
+.ordercart-td-id {
+  width: 10%;
+}
+.ordercart-td-shop {
+  width: 15%;
+}
+.ordercart-td-prod {
+  width: 20%;
+}
+.ordercart-td-price {
+  width: 15%;
+}
+.ordercart-td-stock {
+  width: 15%;
+}
+.ordercart-td-qty {
+  width: 15%;
+}
+.ordercart-td-total {
+  width: 10%;
+}
+.ordercart-total-box {
+  background: #e8f4fd;
+  border-radius: 8px;
+  padding: 16px;
+  border-left: 4px solid #2196f3;
+  text-align: right;
+}
+.ordercart-total-text {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #1976d2;
+}
+
+/* generalUser/orderDetail.html 用（体裁厳守） */
+.orderdetail-outer-box {
+  background: #f7faff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px #b3d9ff55;
+  padding: 28px 24px 24px 24px;
+  margin-bottom: 36px;
+  border: 1.5px solid #b3d9ff;
+}
+.orderdetail-inner-box {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px #b3d9ff33;
+  padding: 12px 8px;
+  margin-bottom: 24px;
+}
+.orderdetail-th-center,
+.orderdetail-td-center {
+  text-align: center;
+}
+.orderdetail-item-title {
+  margin: 18px 0 10px 0;
+  font-size: 1.1rem;
+  color: #223a54;
+}
+.orderdetail-total-label {
+  text-align: right;
+  font-weight: bold;
+}
+.orderdetail-total-value {
+  font-weight: bold;
+}
+.orderdetail-status-form {
+  margin: 12px 0px;
+  background: #f7faff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px #b3d9ff33;
+}
+.orderdetail-status-row {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 15px;
+}
+.orderdetail-status-label {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #223a54;
+}
+.orderdetail-status-value {
+  padding: 8px;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #b3d9ff;
+  background: #fff;
+  display: inline-block;
+  min-width: 100px;
+}
+.orderdetail-cancel-btn {
+  margin-left: 12px;
+  background: #e57373;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 18px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* generalUser/orderList.html 用（体裁厳守） */
+.orderlist-checkbox-cell {
+  white-space: nowrap;
+  text-align: center;
+}
+.orderlist-thead {
+  position: sticky;
+  top: 0;
+  background: #f7faff;
+  z-index: 1;
+}
+.orderlist-th-center {
+  text-align: center;
+}
+
+/* generalUser/prodSearch.html 用（体裁厳守） */
+.prodsearch-outer-box {
+  background: #f7faff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px #b3d9ff55;
+  padding: 28px 24px 24px 24px;
+  margin-bottom: 36px;
+  border: 1.5px solid #b3d9ff;
+}
+.prodsearch-note {
+  margin-bottom: 18px;
+}
+.prodsearch-inner-box {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px #b3d9ff33;
+  padding: 0 8px 12px 8px;
+  margin-bottom: 24px;
+}
+.prodsearch-scroll {
+  max-height: 220px;
+  overflow-y: auto;
+}
+.prodsearch-table {
+  margin-bottom: 0;
+}
+
+/* generalUser/prodSearchStep2.html 用（体裁厳守） */
+.prodsearch2-outer-box {
+  background: #f7faff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px #b3d9ff55;
+  padding: 28px 24px 24px 24px;
+  margin-bottom: 36px;
+  border: 1.5px solid #b3d9ff;
+}
+.prodsearch2-shop-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 18px 0 18px 0;
+  letter-spacing: 0.05em;
+  color: #1a237e;
+}
+.prodsearch2-inner-box {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px #b3d9ff33;
+  padding: 12px 8px;
+  margin-bottom: 24px;
+}
+.prodsearch2-scroll {
+  max-height: 220px;
+  overflow-y: auto;
+}
+.prodsearch2-table {
+  margin-bottom: 0;
+}
+
+/* storeManager/shop.html 用（体裁厳守） */
+.smshop-outer-box {
+  background: #f7faff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px #b3d9ff55;
+  padding: 28px 24px 24px 24px;
+  margin-bottom: 36px;
+  border: 1.5px solid #b3d9ff;
+}
+.smshop-note {
+  margin-bottom: 18px;
+}
+.smshop-inner-box {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px #b3d9ff33;
+  padding: 12px 8px;
+  margin-bottom: 24px;
+}
+.smshop-table {
+  margin-bottom: 0;
+  width: 100%;
+  min-width: 1200px;
+}
+.smshop-th-center {
+  text-align: center;
+}
+.smshop-td-center {
+  text-align: center;
+}
+.smshop-input {
+  text-align: center;
+  padding: 6px 10px;
+}
+.smshop-input-id {
+  width: 60px;
+}
+.smshop-input-company {
+  width: 180px;
+}
+.smshop-input-zip {
+  width: 60px;
+}
+.smshop-input-address {
+  width: 220px;
+}
+.smshop-input-tel {
+  width: 140px;
+}
+.smshop-input-email {
+  width: 220px;
+}
+
+/* storeManager/shopMenu.html 用（体裁厳守） */
+.smshopmenu-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* storeManager/shopOrderDetail.html 用（体裁厳守） */
+.smodetail-outer-box {
+  background: #f7faff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px #b3d9ff55;
+  padding: 28px 24px 24px 24px;
+  margin-bottom: 36px;
+  border: 1.5px solid #b3d9ff;
+}
+.smodetail-inner-box {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px #b3d9ff33;
+  padding: 12px 8px;
+  margin-bottom: 24px;
+}
+.smodetail-table {
+  margin-bottom: 0;
+}
+.smodetail-th-center,
+.smodetail-td-center {
+  text-align: center;
+}
+.smodetail-item-title {
+  margin: 18px 0 10px 0;
+  font-size: 1.1rem;
+  color: #223a54;
+}
+.smodetail-total-label {
+  text-align: right;
+  font-weight: bold;
+}
+.smodetail-total-value {
+  font-weight: bold;
+}
+.smodetail-status-form {
+  margin: 12px 0px;
+  background: #f7faff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px #b3d9ff33;
+}
+.smodetail-status-row {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 15px;
+}
+.smodetail-status-label {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #223a54;
+}
+.smodetail-status-select {
+  padding: 8px;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #b3d9ff;
+  background: #fff;
+}
+
+/* storeManager/shopOrderList.html 用（体裁厳守） */
+.smorderlist-outer-box {
+  background: #f7faff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px #b3d9ff55;
+  padding: 28px 24px 24px 24px;
+  margin-bottom: 36px;
+  border: 1.5px solid #b3d9ff;
+}
+
+/* storeManager/shopStockList.html */
+.smstocklist-outer-box {
+  background: #f7faff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px #b3d9ff55;
+  padding: 28px 24px 24px 24px;
+  margin-bottom: 36px;
+  border: 1.5px solid #b3d9ff;
+}
+
+.smstocklist-note {
+  margin-bottom: 18px;
+}
+
+.smstocklist-inner-box {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px #b3d9ff33;
+  padding: 12px 8px;
+  margin-bottom: 24px;
+}
+
+.smstocklist-scroll {
+  max-height: 220px;
+  overflow-y: auto;
+  border-radius: 8px;
+}
+
+.smstocklist-table {
+  margin-bottom: 0;
+}
+
+.smstocklist-thead {
+  position: sticky;
+  top: 0;
+  background: #f7faff;
+  z-index: 1;
+}
+
+.smstocklist-th-center,
+.smstocklist-td-center {
+  text-align: center;
+}
+
+.smstocklist-radio-label {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+/* storeManager/shopStock.html */
+.smstock-box {
+  background: transparent;
+  box-shadow: none;
+  border: none;
+}
+
+/* storeManager/shopStockAdd.html */
+.smstockadd-select {
+  width: 100%;
+  min-width: 120px;
+}
+
+/* generalUser/order.html */
+.order-total-label {
+  text-align: right;
+  font-weight: bold;
+}
+
+.order-total-amount {
+  font-weight: bold;
+}

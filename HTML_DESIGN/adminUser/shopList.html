@@ -15,71 +15,37 @@
       <div class="productlist-box">
         <div class="table-wrapper">
           <h2>店舗一覧リスト</h2>
-          <div
-            style="
-              background: #f7faff;
-              border-radius: 14px;
-              box-shadow: 0 2px 12px #b3d9ff55;
-              padding: 28px 24px 24px 24px;
-              margin-bottom: 36px;
-              border: 1.5px solid #b3d9ff;
-            "
-          >
-            <div
-              style="
-                background: #fff;
-                border-radius: 8px;
-                box-shadow: 0 1px 6px #b3d9ff33;
-                padding: 12px 8px;
-                margin-bottom: 24px;
-              "
-            >
-              <table
-                class="product-table sticky-header-table"
-                style="margin-bottom: 0"
-              >
-                <thead
-                  style="
-                    position: sticky;
-                    top: 0;
-                    background: #f7faff;
-                    z-index: 1;
-                  "
-                >
+          <div class="shoplist-outer-box">
+            <div class="shoplist-inner-box">
+              <table class="product-table sticky-header-table shoplist-table">
+                <thead class="shoplist-thead">
                   <tr>
-                    <th style="text-align: center">選択</th>
-                    <th style="text-align: center">店舗ID</th>
-                    <th style="text-align: center">会社名</th>
-                    <th style="text-align: center">郵便番号</th>
-                    <th style="text-align: center">住所</th>
-                    <th style="text-align: center">電話番号</th>
-                    <th style="text-align: center">メールアドレス</th>
-                    <th style="text-align: center">操作</th>
+                    <th class="shoplist-th-center">選択</th>
+                    <th class="shoplist-th-center">店舗ID</th>
+                    <th class="shoplist-th-center">会社名</th>
+                    <th class="shoplist-th-center">郵便番号</th>
+                    <th class="shoplist-th-center">住所</th>
+                    <th class="shoplist-th-center">電話番号</th>
+                    <th class="shoplist-th-center">メールアドレス</th>
+                    <th class="shoplist-th-center">操作</th>
                   </tr>
                 </thead>
-                <tbody
-                  style="
-                    display: block;
-                    max-height: 320px;
-                    overflow-y: auto;
-                    width: 100%;
-                  "
-                >
-                  <tr style="display: table; width: 100%; table-layout: fixed">
-                    <td style="text-align: center">
+                <tbody class="shoplist-tbody">
+                  <tr class="shoplist-tr">
+                    <td class="shoplist-td-center">
                       <input
                         type="checkbox"
                         name="selectShop"
                         aria-label="店舗選択"
                       />
                     </td>
-                    <td style="text-align: center">S001</td>
-                    <td style="text-align: center">株式会社アルファ</td>
-                    <td style="text-align: center">150-0043</td>
-                    <td style="text-align: center">東京都渋谷区道玄坂1-1-1</td>
-                    <td style="text-align: center">03-1234-5678</td>
-                    <td style="text-align: center">tokyo@alpha.co.jp</td>
-                    <td style="text-align: center">
+                    <td class="shoplist-td-center">S001</td>
+                    <td class="shoplist-td-center">株式会社アルファ</td>
+                    <td class="shoplist-td-center">150-0043</td>
+                    <td class="shoplist-td-center">東京都渋谷区道玄坂1-1-1</td>
+                    <td class="shoplist-td-center">03-1234-5678</td>
+                    <td class="shoplist-td-center">tokyo@alpha.co.jp</td>
+                    <td class="shoplist-td-center">
                       <button
                         class="update-btn"
                         onclick="location.href='shop.html'; return false;"
@@ -89,21 +55,21 @@
                       </button>
                     </td>
                   </tr>
-                  <tr style="display: table; width: 100%; table-layout: fixed">
-                    <td style="text-align: center">
+                  <tr class="shoplist-tr">
+                    <td class="shoplist-td-center">
                       <input
                         type="checkbox"
                         name="selectShop"
                         aria-label="店舗選択"
                       />
                     </td>
-                    <td style="text-align: center">S002</td>
-                    <td style="text-align: center">株式会社アルファ</td>
-                    <td style="text-align: center">160-0022</td>
-                    <td style="text-align: center">東京都新宿区新宿3-2-2</td>
-                    <td style="text-align: center">03-2345-6789</td>
-                    <td style="text-align: center">shinjuku@alpha.co.jp</td>
-                    <td style="text-align: center">
+                    <td class="shoplist-td-center">S002</td>
+                    <td class="shoplist-td-center">株式会社アルファ</td>
+                    <td class="shoplist-td-center">160-0022</td>
+                    <td class="shoplist-td-center">東京都新宿区新宿3-2-2</td>
+                    <td class="shoplist-td-center">03-2345-6789</td>
+                    <td class="shoplist-td-center">shinjuku@alpha.co.jp</td>
+                    <td class="shoplist-td-center">
                       <button
                         class="update-btn"
                         onclick="location.href='shop.html'; return false;"
@@ -113,21 +79,21 @@
                       </button>
                     </td>
                   </tr>
-                  <tr style="display: table; width: 100%; table-layout: fixed">
-                    <td style="text-align: center">
+                  <tr class="shoplist-tr">
+                    <td class="shoplist-td-center">
                       <input
                         type="checkbox"
                         name="selectShop"
                         aria-label="店舗選択"
                       />
                     </td>
-                    <td style="text-align: center">S003</td>
-                    <td style="text-align: center">株式会社アルファ</td>
-                    <td style="text-align: center">171-0022</td>
-                    <td style="text-align: center">東京都豊島区南池袋1-3-3</td>
-                    <td style="text-align: center">03-3456-7890</td>
-                    <td style="text-align: center">ikebukuro@alpha.co.jp</td>
-                    <td style="text-align: center">
+                    <td class="shoplist-td-center">S003</td>
+                    <td class="shoplist-td-center">株式会社アルファ</td>
+                    <td class="shoplist-td-center">171-0022</td>
+                    <td class="shoplist-td-center">東京都豊島区南池袋1-3-3</td>
+                    <td class="shoplist-td-center">03-3456-7890</td>
+                    <td class="shoplist-td-center">ikebukuro@alpha.co.jp</td>
+                    <td class="shoplist-td-center">
                       <button
                         class="update-btn"
                         onclick="location.href='shop.html'; return false;"
@@ -137,23 +103,23 @@
                       </button>
                     </td>
                   </tr>
-                  <tr style="display: table; width: 100%; table-layout: fixed">
-                    <td style="text-align: center">
+                  <tr class="shoplist-tr">
+                    <td class="shoplist-td-center">
                       <input
                         type="checkbox"
                         name="selectShop"
                         aria-label="店舗選択"
                       />
                     </td>
-                    <td style="text-align: center">S004</td>
-                    <td style="text-align: center">株式会社アルファ</td>
-                    <td style="text-align: center">101-0021</td>
-                    <td style="text-align: center">
+                    <td class="shoplist-td-center">S004</td>
+                    <td class="shoplist-td-center">株式会社アルファ</td>
+                    <td class="shoplist-td-center">101-0021</td>
+                    <td class="shoplist-td-center">
                       東京都千代田区外神田4-4-4
                     </td>
-                    <td style="text-align: center">03-4567-8901</td>
-                    <td style="text-align: center">akiba@alpha.co.jp</td>
-                    <td style="text-align: center">
+                    <td class="shoplist-td-center">03-4567-8901</td>
+                    <td class="shoplist-td-center">akiba@alpha.co.jp</td>
+                    <td class="shoplist-td-center">
                       <button
                         class="update-btn"
                         onclick="location.href='shop.html'; return false;"
@@ -163,21 +129,21 @@
                       </button>
                     </td>
                   </tr>
-                  <tr style="display: table; width: 100%; table-layout: fixed">
-                    <td style="text-align: center">
+                  <tr class="shoplist-tr">
+                    <td class="shoplist-td-center">
                       <input
                         type="checkbox"
                         name="selectShop"
                         aria-label="店舗選択"
                       />
                     </td>
-                    <td style="text-align: center">S005</td>
-                    <td style="text-align: center">株式会社アルファ</td>
-                    <td style="text-align: center">150-0043</td>
-                    <td style="text-align: center">東京都渋谷区道玄坂2-5-5</td>
-                    <td style="text-align: center">03-5678-9012</td>
-                    <td style="text-align: center">shibuya@alpha.co.jp</td>
-                    <td style="text-align: center">
+                    <td class="shoplist-td-center">S005</td>
+                    <td class="shoplist-td-center">株式会社アルファ</td>
+                    <td class="shoplist-td-center">150-0043</td>
+                    <td class="shoplist-td-center">東京都渋谷区道玄坂2-5-5</td>
+                    <td class="shoplist-td-center">03-5678-9012</td>
+                    <td class="shoplist-td-center">shibuya@alpha.co.jp</td>
+                    <td class="shoplist-td-center">
                       <button
                         class="update-btn"
                         onclick="location.href='shop.html'; return false;"
@@ -187,23 +153,23 @@
                       </button>
                     </td>
                   </tr>
-                  <tr style="display: table; width: 100%; table-layout: fixed">
-                    <td style="text-align: center">
+                  <tr class="shoplist-tr">
+                    <td class="shoplist-td-center">
                       <input
                         type="checkbox"
                         name="selectShop"
                         aria-label="店舗選択"
                       />
                     </td>
-                    <td style="text-align: center">S006</td>
-                    <td style="text-align: center">株式会社ベータ</td>
-                    <td style="text-align: center">220-0011</td>
-                    <td style="text-align: center">
+                    <td class="shoplist-td-center">S006</td>
+                    <td class="shoplist-td-center">株式会社ベータ</td>
+                    <td class="shoplist-td-center">220-0011</td>
+                    <td class="shoplist-td-center">
                       神奈川県横浜市西区みなとみらい1-1-1
                     </td>
-                    <td style="text-align: center">045-123-4567</td>
-                    <td style="text-align: center">yokohama@beta.co.jp</td>
-                    <td style="text-align: center">
+                    <td class="shoplist-td-center">045-123-4567</td>
+                    <td class="shoplist-td-center">yokohama@beta.co.jp</td>
+                    <td class="shoplist-td-center">
                       <button
                         class="update-btn"
                         onclick="location.href='shop.html'; return false;"
@@ -213,23 +179,23 @@
                       </button>
                     </td>
                   </tr>
-                  <tr style="display: table; width: 100%; table-layout: fixed">
-                    <td style="text-align: center">
+                  <tr class="shoplist-tr">
+                    <td class="shoplist-td-center">
                       <input
                         type="checkbox"
                         name="selectShop"
                         aria-label="店舗選択"
                       />
                     </td>
-                    <td style="text-align: center">S007</td>
-                    <td style="text-align: center">株式会社ベータ</td>
-                    <td style="text-align: center">231-0012</td>
-                    <td style="text-align: center">
+                    <td class="shoplist-td-center">S007</td>
+                    <td class="shoplist-td-center">株式会社ベータ</td>
+                    <td class="shoplist-td-center">231-0012</td>
+                    <td class="shoplist-td-center">
                       神奈川県横浜市中区本町2-2-2
                     </td>
-                    <td style="text-align: center">045-234-5678</td>
-                    <td style="text-align: center">honcho@beta.co.jp</td>
-                    <td style="text-align: center">
+                    <td class="shoplist-td-center">045-234-5678</td>
+                    <td class="shoplist-td-center">honcho@beta.co.jp</td>
+                    <td class="shoplist-td-center">
                       <button
                         class="update-btn"
                         onclick="location.href='shop.html'; return false;"
@@ -239,23 +205,23 @@
                       </button>
                     </td>
                   </tr>
-                  <tr style="display: table; width: 100%; table-layout: fixed">
-                    <td style="text-align: center">
+                  <tr class="shoplist-tr">
+                    <td class="shoplist-td-center">
                       <input
                         type="checkbox"
                         name="selectShop"
                         aria-label="店舗選択"
                       />
                     </td>
-                    <td style="text-align: center">S008</td>
-                    <td style="text-align: center">株式会社ガンマ</td>
-                    <td style="text-align: center">530-0001</td>
-                    <td style="text-align: center">
+                    <td class="shoplist-td-center">S008</td>
+                    <td class="shoplist-td-center">株式会社ガンマ</td>
+                    <td class="shoplist-td-center">530-0001</td>
+                    <td class="shoplist-td-center">
                       大阪府大阪市北区梅田1-1-1
                     </td>
-                    <td style="text-align: center">06-1234-5678</td>
-                    <td style="text-align: center">umeda@gamma.co.jp</td>
-                    <td style="text-align: center">
+                    <td class="shoplist-td-center">06-1234-5678</td>
+                    <td class="shoplist-td-center">umeda@gamma.co.jp</td>
+                    <td class="shoplist-td-center">
                       <button
                         class="update-btn"
                         onclick="location.href='shop.html'; return false;"
@@ -265,23 +231,23 @@
                       </button>
                     </td>
                   </tr>
-                  <tr style="display: table; width: 100%; table-layout: fixed">
-                    <td style="text-align: center">
+                  <tr class="shoplist-tr">
+                    <td class="shoplist-td-center">
                       <input
                         type="checkbox"
                         name="selectShop"
                         aria-label="店舗選択"
                       />
                     </td>
-                    <td style="text-align: center">S009</td>
-                    <td style="text-align: center">株式会社ガンマ</td>
-                    <td style="text-align: center">542-0081</td>
-                    <td style="text-align: center">
+                    <td class="shoplist-td-center">S009</td>
+                    <td class="shoplist-td-center">株式会社ガンマ</td>
+                    <td class="shoplist-td-center">542-0081</td>
+                    <td class="shoplist-td-center">
                       大阪府大阪市中央区南船場2-2-2
                     </td>
-                    <td style="text-align: center">06-2345-6789</td>
-                    <td style="text-align: center">minami@gamma.co.jp</td>
-                    <td style="text-align: center">
+                    <td class="shoplist-td-center">06-2345-6789</td>
+                    <td class="shoplist-td-center">minami@gamma.co.jp</td>
+                    <td class="shoplist-td-center">
                       <button
                         class="update-btn"
                         onclick="location.href='shop.html'; return false;"
@@ -291,23 +257,23 @@
                       </button>
                     </td>
                   </tr>
-                  <tr style="display: table; width: 100%; table-layout: fixed">
-                    <td style="text-align: center">
+                  <tr class="shoplist-tr">
+                    <td class="shoplist-td-center">
                       <input
                         type="checkbox"
                         name="selectShop"
                         aria-label="店舗選択"
                       />
                     </td>
-                    <td style="text-align: center">S010</td>
-                    <td style="text-align: center">株式会社デルタ</td>
-                    <td style="text-align: center">460-0008</td>
-                    <td style="text-align: center">
+                    <td class="shoplist-td-center">S010</td>
+                    <td class="shoplist-td-center">株式会社デルタ</td>
+                    <td class="shoplist-td-center">460-0008</td>
+                    <td class="shoplist-td-center">
                       愛知県名古屋市中区栄3-3-3
                     </td>
-                    <td style="text-align: center">052-123-4567</td>
-                    <td style="text-align: center">sakae@delta.co.jp</td>
-                    <td style="text-align: center">
+                    <td class="shoplist-td-center">052-123-4567</td>
+                    <td class="shoplist-td-center">sakae@delta.co.jp</td>
+                    <td class="shoplist-td-center">
                       <button
                         class="update-btn"
                         onclick="location.href='shop.html'; return false;"

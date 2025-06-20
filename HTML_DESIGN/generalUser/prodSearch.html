@@ -14,35 +14,12 @@
       <div class="productlist-box">
         <h2>商品検索</h2>
         <div class="table-wrapper">
-          <div
-            style="
-              background: #f7faff;
-              border-radius: 14px;
-              box-shadow: 0 2px 12px #b3d9ff55;
-              padding: 28px 24px 24px 24px;
-              margin-bottom: 36px;
-              border: 1.5px solid #b3d9ff;
-            "
-          >
-            <p class="note" style="margin-bottom: 18px">
-              ※商品を選択してください
-            </p>
-            <div
-              style="
-                background: #fff;
-                border-radius: 8px;
-                box-shadow: 0 1px 6px #b3d9ff33;
-                padding: 0 8px 12px 8px;
-                margin-bottom: 24px;
-              "
-            >
-              <div
-                class="order-history-scroll"
-                style="max-height: 220px; overflow-y: auto"
-              >
+          <div class="prodsearch-outer-box">
+            <p class="note prodsearch-note">※商品を選択してください</p>
+            <div class="prodsearch-inner-box">
+              <div class="order-history-scroll prodsearch-scroll">
                 <table
-                  class="product-table sticky-header-table"
-                  style="margin-bottom: 0"
+                  class="product-table sticky-header-table prodsearch-table"
                 >
                   <thead>
                     <tr>
@@ -54,110 +31,137 @@
                   <tbody>
                     <tr>
                       <td class="radio-cell">
-                        <input
-                          type="checkbox"
-                          name="selectProduct"
-                          aria-label="この商品を選択"
-                        />
+                        <label
+                          ><input
+                            type="radio"
+                            name="selectProduct"
+                            id="prod-radio-melon"
+                          />
+                        </label>
                       </td>
                       <td>メロンソーダ</td>
                       <td>120</td>
                     </tr>
                     <tr>
                       <td class="radio-cell">
-                        <input
-                          type="checkbox"
-                          name="selectProduct"
-                          aria-label="この商品を選択"
-                        />
+                        <label
+                          ><input
+                            type="radio"
+                            name="selectProduct"
+                            id="prod-radio-coffee"
+                          />
+                        </label>
                       </td>
                       <td>コーヒー</td>
                       <td>130</td>
                     </tr>
                     <tr>
                       <td class="radio-cell">
-                        <input
-                          type="checkbox"
-                          name="selectProduct"
-                          aria-label="この商品を選択"
-                        />
+                        <label
+                          ><input
+                            type="radio"
+                            name="selectProduct"
+                            id="prod-radio-cider"
+                          />
+                        </label>
                       </td>
                       <td>サイダー</td>
                       <td>125</td>
                     </tr>
                     <tr>
                       <td class="radio-cell">
-                        <input
-                          type="checkbox"
-                          name="selectProduct"
-                          aria-label="この商品を選択"
-                        />
+                        <label
+                          ><input
+                            type="radio"
+                            name="selectProduct"
+                            id="prod-radio-cola"
+                          />
+                          コーラ</label
+                        >
                       </td>
                       <td>コーラ</td>
                       <td>140</td>
                     </tr>
                     <tr>
                       <td class="radio-cell">
-                        <input
-                          type="checkbox"
-                          name="selectProduct"
-                          aria-label="この商品を選択"
-                        />
+                        <label
+                          ><input
+                            type="radio"
+                            name="selectProduct"
+                            id="prod-radio-tea"
+                          />
+                          紅茶</label
+                        >
                       </td>
                       <td>紅茶</td>
                       <td>110</td>
                     </tr>
                     <tr>
                       <td class="radio-cell">
-                        <input
-                          type="checkbox"
-                          name="selectProduct"
-                          aria-label="この商品を選択"
-                        />
+                        <label
+                          ><input
+                            type="radio"
+                            name="selectProduct"
+                            id="prod-radio-latte"
+                          />
+                          カフェラテ</label
+                        >
                       </td>
                       <td>カフェラテ</td>
                       <td>150</td>
                     </tr>
                     <tr>
                       <td class="radio-cell">
-                        <input
-                          type="checkbox"
-                          name="selectProduct"
-                          aria-label="この商品を選択"
-                        />
+                        <label
+                          ><input
+                            type="radio"
+                            name="selectProduct"
+                            id="prod-radio-icecoffee"
+                          />
+                          アイスコーヒー</label
+                        >
                       </td>
                       <td>アイスコーヒー</td>
                       <td>135</td>
                     </tr>
                     <tr>
                       <td class="radio-cell">
-                        <input
-                          type="checkbox"
-                          name="selectProduct"
-                          aria-label="この商品を選択"
-                        />
+                        <label
+                          ><input
+                            type="radio"
+                            name="selectProduct"
+                            id="prod-radio-sandwich"
+                          />
+                          サンドイッチ</label
+                        >
                       </td>
                       <td>サンドイッチ</td>
                       <td>200</td>
                     </tr>
                     <tr>
                       <td class="radio-cell">
-                        <input
-                          type="checkbox"
-                          name="selectProduct"
-                          aria-label="この商品を選択"
-                        />
+                        <label
+                          ><input
+                            type="radio"
+                            name="selectProduct"
+                            id="prod-radio-orange"
+                          />
+                          オレンジジュース</label
+                        >
                       </td>
                       <td>オレンジジュース</td>
                       <td>120</td>
                     </tr>
                     <tr>
                       <td class="radio-cell">
-                        <input
-                          type="checkbox"
-                          name="selectProduct"
-                          aria-label="この商品を選択"
-                        />
+                        <label
+                          ><input
+                            type="radio"
+                            name="selectProduct"
+                            id="prod-radio-milk"
+                          />
+                          ミルク</label
+                        >
                       </td>
                       <td>ミルク</td>
                       <td>100</td>
