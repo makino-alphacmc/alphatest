@@ -31,7 +31,7 @@ body {
   padding: 20px;
   margin: 20px;
   width: 90%;
-  max-width: 1000px;
+  max-width: 1440px;
 }
 
 .welcome-box h1 {
@@ -117,7 +117,7 @@ productSearch_branchSearch 用
   padding: 20px;
   margin: 20px;
   width: 90%;
-  max-width: 1000px;
+  max-width: 1440px;
 }
 
 .productlist-title {
@@ -576,7 +576,7 @@ shopOrderList 用
   padding: 20px;
   margin: 20px;
   width: 90%;
-  max-width: 1000px;
+  max-width: 1440px;
 }
 
 /* === orderList.html 専用レイアウト === */
@@ -859,4 +859,118 @@ shopOrderList 用
   border-radius: 6px 6px 0 0;
   width: 180px;
   box-shadow: 0 2px 8px #b3d9ff22;
+}
+
+/* 店舗一覧リスト用 sticky thead & tbody scroll（修正版） */
+.sticky-header-table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+.sticky-header-table thead {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+.sticky-header-table tbody {
+  display: block;
+  max-height: 320px;
+  overflow-y: auto;
+  width: 100%;
+}
+.sticky-header-table th,
+.sticky-header-table td {
+  box-sizing: border-box;
+}
+.sticky-header-table th:nth-child(7),
+.sticky-header-table td:nth-child(7) {
+  width: 18%; /* メールアドレス用に広め */
+  word-break: break-all;
+  white-space: normal;
+}
+.sticky-header-table th:nth-child(1),
+.sticky-header-table td:nth-child(1) {
+  width: 7%;
+}
+.sticky-header-table th:nth-child(2),
+.sticky-header-table td:nth-child(2) {
+  width: 10%;
+}
+.sticky-header-table th:nth-child(3),
+.sticky-header-table td:nth-child(3) {
+  width: 15%;
+}
+.sticky-header-table th:nth-child(4),
+.sticky-header-table td:nth-child(4) {
+  width: 10%;
+}
+.sticky-header-table th:nth-child(5),
+.sticky-header-table td:nth-child(5) {
+  width: 18%;
+}
+.sticky-header-table th:nth-child(6),
+.sticky-header-table td:nth-child(6) {
+  width: 12%;
+}
+.sticky-header-table th:nth-child(8),
+.sticky-header-table td:nth-child(8) {
+  width: 10%;
+}
+
+/* 商品一覧リスト用 sticky thead & tbody scroll（6列用） */
+.sticky-header-table.prodlist th,
+.sticky-header-table.prodlist td {
+  box-sizing: border-box;
+}
+.sticky-header-table.prodlist th:nth-child(1),
+.sticky-header-table.prodlist td:nth-child(1) {
+  width: 10%;
+}
+.sticky-header-table.prodlist th:nth-child(2),
+.sticky-header-table.prodlist td:nth-child(2) {
+  width: 15%;
+}
+.sticky-header-table.prodlist th:nth-child(3),
+.sticky-header-table.prodlist td:nth-child(3) {
+  width: 30%;
+}
+.sticky-header-table.prodlist th:nth-child(4),
+.sticky-header-table.prodlist td:nth-child(4) {
+  width: 15%;
+}
+.sticky-header-table.prodlist th:nth-child(5),
+.sticky-header-table.prodlist td:nth-child(5) {
+  width: 15%;
+}
+.sticky-header-table.prodlist th:nth-child(6),
+.sticky-header-table.prodlist td:nth-child(6) {
+  width: 15%;
+}
+
+/* 店舗検索リスト用 sticky thead & tbody scroll（branchlist用） */
+.sticky-header-table.branchlist th,
+.sticky-header-table.branchlist td {
+  box-sizing: border-box;
+}
+.sticky-header-table.branchlist th:nth-child(1),
+.sticky-header-table.branchlist td:nth-child(1) {
+  width: 10%;
+}
+.sticky-header-table.branchlist th:nth-child(2),
+.sticky-header-table.branchlist td:nth-child(2) {
+  width: 90%;
+}
+
+/* アクセシビリティ用: 視覚的に非表示だがスクリーンリーダーで読める */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
 }

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>商品一覧</title>
+    <title>商品一覧リスト</title>
     <link rel="stylesheet" href="../css/style.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&display=swap"
@@ -14,6 +14,7 @@
     <div class="container">
       <div class="productlist-box">
         <div class="table-wrapper">
+          <h2>商品一覧リスト</h2>
           <div
             style="
               background: #f7faff;
@@ -26,17 +27,7 @@
           >
             <div
               style="display: flex; align-items: center; margin-bottom: 10px"
-            >
-              <span
-                style="
-                  font-weight: bold;
-                  font-size: 1.25rem;
-                  color: #223a54;
-                  letter-spacing: 0.04em;
-                "
-                >商品一覧</span
-              >
-            </div>
+            ></div>
             <div
               style="
                 background: #fff;
@@ -50,24 +41,41 @@
                 style="max-height: 350px; overflow-y: auto; border-radius: 8px"
               >
                 <table
-                  class="product-table sticky-header-table"
+                  class="product-table sticky-header-table prodlist"
                   style="margin-bottom: 0"
                 >
                   <thead>
                     <tr>
-                      <th>商品ID</th>
-                      <th>商品名</th>
-                      <th>価格</th>
-                      <th>在庫数</th>
-                      <th scope="col">操作</th>
+                      <th style="text-align: center">選択</th>
+                      <th style="text-align: center">商品ID</th>
+                      <th style="text-align: center">商品名</th>
+                      <th style="text-align: center">基準仕入価格</th>
+                      <th style="text-align: center">注文単位</th>
+                      <th style="text-align: center">操作</th>
                     </tr>
                   </thead>
-                  <tbody>
-                    <tr>
-                      <td>P001</td>
-                      <td>プレミアムコーヒー</td>
-                      <td>¥450</td>
-                      <td style="text-align: center">100</td>
+                  <tbody
+                    style="
+                      display: block;
+                      max-height: 320px;
+                      overflow-y: auto;
+                      width: 100%;
+                    "
+                  >
+                    <tr
+                      style="display: table; width: 100%; table-layout: fixed"
+                    >
+                      <td style="text-align: center">
+                        <input
+                          type="checkbox"
+                          name="selectProd"
+                          aria-label="商品選択"
+                        />
+                      </td>
+                      <td style="text-align: center">P001</td>
+                      <td style="text-align: center">プレミアムコーヒー</td>
+                      <td style="text-align: center">450</td>
+                      <td style="text-align: center">1</td>
                       <td style="text-align: center">
                         <button
                           class="update-btn"
@@ -78,11 +86,20 @@
                         </button>
                       </td>
                     </tr>
-                    <tr>
-                      <td>P002</td>
-                      <td>アイスティー</td>
-                      <td>¥350</td>
-                      <td style="text-align: center">80</td>
+                    <tr
+                      style="display: table; width: 100%; table-layout: fixed"
+                    >
+                      <td style="text-align: center">
+                        <input
+                          type="checkbox"
+                          name="selectProd"
+                          aria-label="商品選択"
+                        />
+                      </td>
+                      <td style="text-align: center">P002</td>
+                      <td style="text-align: center">アイスティー</td>
+                      <td style="text-align: center">350</td>
+                      <td style="text-align: center">1</td>
                       <td style="text-align: center">
                         <button
                           class="update-btn"
@@ -93,11 +110,20 @@
                         </button>
                       </td>
                     </tr>
-                    <tr>
-                      <td>P003</td>
-                      <td>カフェラテ</td>
-                      <td>¥500</td>
-                      <td style="text-align: center">60</td>
+                    <tr
+                      style="display: table; width: 100%; table-layout: fixed"
+                    >
+                      <td style="text-align: center">
+                        <input
+                          type="checkbox"
+                          name="selectProd"
+                          aria-label="商品選択"
+                        />
+                      </td>
+                      <td style="text-align: center">P003</td>
+                      <td style="text-align: center">カフェラテ</td>
+                      <td style="text-align: center">500</td>
+                      <td style="text-align: center">1</td>
                       <td style="text-align: center">
                         <button
                           class="update-btn"
@@ -108,11 +134,20 @@
                         </button>
                       </td>
                     </tr>
-                    <tr>
-                      <td>P004</td>
-                      <td>抹茶ラテ</td>
-                      <td>¥520</td>
-                      <td style="text-align: center">40</td>
+                    <tr
+                      style="display: table; width: 100%; table-layout: fixed"
+                    >
+                      <td style="text-align: center">
+                        <input
+                          type="checkbox"
+                          name="selectProd"
+                          aria-label="商品選択"
+                        />
+                      </td>
+                      <td style="text-align: center">P004</td>
+                      <td style="text-align: center">抹茶ラテ</td>
+                      <td style="text-align: center">520</td>
+                      <td style="text-align: center">1</td>
                       <td style="text-align: center">
                         <button
                           class="update-btn"
@@ -123,11 +158,20 @@
                         </button>
                       </td>
                     </tr>
-                    <tr>
-                      <td>P005</td>
-                      <td>レモネード</td>
-                      <td>¥400</td>
-                      <td style="text-align: center">90</td>
+                    <tr
+                      style="display: table; width: 100%; table-layout: fixed"
+                    >
+                      <td style="text-align: center">
+                        <input
+                          type="checkbox"
+                          name="selectProd"
+                          aria-label="商品選択"
+                        />
+                      </td>
+                      <td style="text-align: center">P005</td>
+                      <td style="text-align: center">レモネード</td>
+                      <td style="text-align: center">400</td>
+                      <td style="text-align: center">1</td>
                       <td style="text-align: center">
                         <button
                           class="update-btn"
@@ -138,11 +182,20 @@
                         </button>
                       </td>
                     </tr>
-                    <tr>
-                      <td>P006</td>
-                      <td>サンドイッチ</td>
-                      <td>¥600</td>
-                      <td style="text-align: center">30</td>
+                    <tr
+                      style="display: table; width: 100%; table-layout: fixed"
+                    >
+                      <td style="text-align: center">
+                        <input
+                          type="checkbox"
+                          name="selectProd"
+                          aria-label="商品選択"
+                        />
+                      </td>
+                      <td style="text-align: center">P006</td>
+                      <td style="text-align: center">サンドイッチ</td>
+                      <td style="text-align: center">600</td>
+                      <td style="text-align: center">10</td>
                       <td style="text-align: center">
                         <button
                           class="update-btn"
@@ -153,11 +206,20 @@
                         </button>
                       </td>
                     </tr>
-                    <tr>
-                      <td>P007</td>
-                      <td>クロワッサン</td>
-                      <td>¥250</td>
-                      <td style="text-align: center">120</td>
+                    <tr
+                      style="display: table; width: 100%; table-layout: fixed"
+                    >
+                      <td style="text-align: center">
+                        <input
+                          type="checkbox"
+                          name="selectProd"
+                          aria-label="商品選択"
+                        />
+                      </td>
+                      <td style="text-align: center">P007</td>
+                      <td style="text-align: center">クロワッサン</td>
+                      <td style="text-align: center">250</td>
+                      <td style="text-align: center">10</td>
                       <td style="text-align: center">
                         <button
                           class="update-btn"
@@ -168,11 +230,20 @@
                         </button>
                       </td>
                     </tr>
-                    <tr>
-                      <td>P008</td>
-                      <td>チーズケーキ</td>
-                      <td>¥480</td>
-                      <td style="text-align: center">50</td>
+                    <tr
+                      style="display: table; width: 100%; table-layout: fixed"
+                    >
+                      <td style="text-align: center">
+                        <input
+                          type="checkbox"
+                          name="selectProd"
+                          aria-label="商品選択"
+                        />
+                      </td>
+                      <td style="text-align: center">P008</td>
+                      <td style="text-align: center">チーズケーキ</td>
+                      <td style="text-align: center">480</td>
+                      <td style="text-align: center">5</td>
                       <td style="text-align: center">
                         <button
                           class="update-btn"
@@ -183,11 +254,20 @@
                         </button>
                       </td>
                     </tr>
-                    <tr>
-                      <td>P009</td>
-                      <td>ショコラケーキ</td>
-                      <td>¥500</td>
-                      <td style="text-align: center">45</td>
+                    <tr
+                      style="display: table; width: 100%; table-layout: fixed"
+                    >
+                      <td style="text-align: center">
+                        <input
+                          type="checkbox"
+                          name="selectProd"
+                          aria-label="商品選択"
+                        />
+                      </td>
+                      <td style="text-align: center">P009</td>
+                      <td style="text-align: center">ショコラケーキ</td>
+                      <td style="text-align: center">500</td>
+                      <td style="text-align: center">5</td>
                       <td style="text-align: center">
                         <button
                           class="update-btn"
@@ -198,11 +278,20 @@
                         </button>
                       </td>
                     </tr>
-                    <tr>
-                      <td>P010</td>
-                      <td>ミネラルウォーター</td>
-                      <td>¥200</td>
+                    <tr
+                      style="display: table; width: 100%; table-layout: fixed"
+                    >
+                      <td style="text-align: center">
+                        <input
+                          type="checkbox"
+                          name="selectProd"
+                          aria-label="商品選択"
+                        />
+                      </td>
+                      <td style="text-align: center">P010</td>
+                      <td style="text-align: center">ミネラルウォーター</td>
                       <td style="text-align: center">200</td>
+                      <td style="text-align: center">24</td>
                       <td style="text-align: center">
                         <button
                           class="update-btn"
@@ -217,23 +306,30 @@
                 </table>
               </div>
             </div>
-            <div class="productlist-buttons button-row-split">
-              <button
-                class="back-btn"
-                onclick="location.href='menu.html'; return false;"
-                aria-label="メニューに戻る"
-              >
-                戻る
-              </button>
-              <button
-                class="add-btn"
-                onclick="location.href='prodNew.html'; return false;"
-                aria-label="新規商品追加"
-              >
-                追加
-              </button>
-            </div>
           </div>
+        </div>
+        <div class="productlist-buttons button-row-split">
+          <button
+            class="back-btn"
+            onclick="location.href='menu.html'; return false;"
+            aria-label="メニューに戻る"
+          >
+            戻る
+          </button>
+          <button
+            class="delete-btn"
+            onclick="alert('選択した商品を削除します'); return false;"
+            aria-label="選択した商品を削除"
+          >
+            削除
+          </button>
+          <button
+            class="add-btn"
+            onclick="location.href='prodNew.html'; return false;"
+            aria-label="新規商品追加"
+          >
+            追加
+          </button>
         </div>
       </div>
     </div>

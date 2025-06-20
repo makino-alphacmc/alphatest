@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>商品情報修正</title>
+    <title>商品更新</title>
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
@@ -13,7 +13,7 @@
         style="background: transparent; box-shadow: none; border: none"
       >
         <form class="stock-form">
-          <h2 class="stock-form-title">商品情報修正</h2>
+          <h2 class="stock-form-title">商品更新</h2>
           <div class="form-group">
             <label for="prodId">商品ID</label>
             <input
@@ -35,34 +35,24 @@
             />
           </div>
           <div class="form-group">
-            <label for="category">カテゴリー</label>
-            <input
-              type="text"
-              id="category"
-              name="category"
-              value="ドリンク"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <label for="price">価格</label>
+            <label for="cost">基準仕入価格</label>
             <input
               type="number"
-              id="price"
-              name="price"
+              id="cost"
+              name="cost"
               value="450"
               min="0"
               required
             />
           </div>
           <div class="form-group">
-            <label for="stock">在庫数</label>
+            <label for="orderUnit">注文単位</label>
             <input
               type="number"
-              id="stock"
-              name="stock"
-              value="100"
-              min="0"
+              id="orderUnit"
+              name="orderUnit"
+              value="1"
+              min="1"
               required
             />
           </div>

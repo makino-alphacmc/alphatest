@@ -19,7 +19,23 @@
             <input type="text" id="userId" name="userId" required />
           </div>
           <div class="form-group">
-            <label for="userName">名前</label>
+            <label for="shopId">店舗ID</label>
+            <input type="text" id="shopId" name="shopId" required />
+          </div>
+          <div class="form-group">
+            <label for="password">パスワード</label>
+            <input type="text" id="password" name="password" required />
+          </div>
+          <div class="form-group">
+            <label for="zipcode">郵便番号</label>
+            <input type="text" id="zipcode" name="zipcode" required />
+          </div>
+          <div class="form-group">
+            <label for="address">住所</label>
+            <input type="text" id="address" name="address" required />
+          </div>
+          <div class="form-group">
+            <label for="userName">氏名</label>
             <input type="text" id="userName" name="userName" required />
           </div>
           <div class="form-group">
@@ -44,7 +60,7 @@
           </div>
           <div class="form-group">
             <label for="role">権限</label>
-            <select id="role" name="role" required>
+            <select id="role" name="role" required onchange="toggleShopId()">
               <option value="user">一般ユーザ</option>
               <option value="manager">店舗担当者</option>
               <option value="admin">管理者</option>
@@ -62,5 +78,21 @@
         </form>
       </div>
     </div>
+    <script>
+      function toggleShopId() {
+        var role = document.getElementById("role").value;
+        var shopId = document.getElementById("shopId");
+        if (role === "manager") {
+          shopId.disabled = false;
+          shopId.style.background = "";
+          shopId.style.color = "";
+        } else {
+          shopId.disabled = true;
+          shopId.style.background = "#eee";
+          shopId.style.color = "#888";
+        }
+      }
+      window.onload = toggleShopId;
+    </script>
   </body>
 </html>

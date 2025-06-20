@@ -12,7 +12,10 @@
     </div>
     <div class="container">
       <div class="productlist-box">
-        <h2>注文登録カート</h2>
+        <h1>注文登録カート</h1>
+
+        <!-- 注文商品一覧 -->
+        <h2>注文商品</h2>
         <div class="table-wrapper">
           <div
             style="
@@ -25,7 +28,7 @@
             "
           >
             <p class="note" style="margin-bottom: 18px">
-              選択した店舗・商品を確認し、注文数量を入力してください。
+              選択した商品の注文数量を入力してください。
             </p>
             <div
               style="
@@ -38,185 +41,172 @@
             >
               <div
                 class="order-history-scroll"
-                style="max-height: 220px; overflow-y: auto"
+                style="max-height: 300px; overflow-y: auto"
               >
                 <table
-                  class="product-table sticky-header-table"
+                  class="product-table"
                   style="margin-bottom: 0"
+                  aria-label="注文商品テーブル"
                 >
-                  <thead>
+                  <thead
+                    style="
+                      position: sticky;
+                      top: 0;
+                      background: #f7faff;
+                      z-index: 1;
+                    "
+                  >
                     <tr>
-                      <th>店舗名</th>
-                      <th>商品名</th>
-                      <th>販売価格</th>
-                      <th>在庫数</th>
-                      <th>注文数量</th>
-                      <th>合計金額</th>
+                      <th style="width: 10%; text-align: center">注文ID</th>
+                      <th style="width: 15%; text-align: center">店舗名</th>
+                      <th style="width: 20%; text-align: center">商品名</th>
+                      <th style="width: 15%; text-align: center">販売価格</th>
+                      <th style="width: 15%; text-align: center">在庫数</th>
+                      <th style="width: 15%; text-align: center">注文数量</th>
+                      <th style="width: 10%; text-align: center">小計</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>新宿店</td>
-                      <td>メロンソーダ</td>
-                      <td>120</td>
-                      <td>10</td>
-                      <td>
+                      <td style="width: 10%; text-align: center">O001</td>
+                      <td style="width: 15%; text-align: center">新宿店</td>
+                      <td style="width: 20%; text-align: center">コーヒー</td>
+                      <td style="width: 15%; text-align: center">130円</td>
+                      <td style="width: 15%; text-align: center">10</td>
+                      <td style="width: 15%; text-align: center">
                         <input
                           type="number"
                           min="0"
                           max="10"
                           value="0"
                           class="order-qty-input"
+                          aria-label="コーヒーの注文数量"
                         />
                       </td>
-                      <td class="total-price">0</td>
-                    </tr>
-                    <tr>
-                      <td>渋谷店</td>
-                      <td>コーヒー</td>
-                      <td>130</td>
-                      <td>5</td>
-                      <td>
-                        <input
-                          type="number"
-                          min="0"
-                          max="5"
-                          value="0"
-                          class="order-qty-input"
-                        />
+                      <td
+                        style="width: 10%; text-align: center"
+                        class="total-price"
+                      >
+                        0円
                       </td>
-                      <td class="total-price">0</td>
                     </tr>
                     <tr>
-                      <td>池袋店</td>
-                      <td>サイダー</td>
-                      <td>125</td>
-                      <td>8</td>
-                      <td>
+                      <td style="width: 10%; text-align: center">O001</td>
+                      <td style="width: 15%; text-align: center">新宿店</td>
+
+                      <td style="width: 20%; text-align: center">
+                        メロンソーダ
+                      </td>
+                      <td style="width: 15%; text-align: center">120円</td>
+                      <td style="width: 15%; text-align: center">8</td>
+                      <td style="width: 15%; text-align: center">
                         <input
                           type="number"
                           min="0"
                           max="8"
                           value="0"
                           class="order-qty-input"
+                          aria-label="メロンソーダの注文数量"
                         />
                       </td>
-                      <td class="total-price">0</td>
-                    </tr>
-                    <tr>
-                      <td>秋葉原店</td>
-                      <td>コーラ</td>
-                      <td>140</td>
-                      <td>6</td>
-                      <td>
-                        <input
-                          type="number"
-                          min="0"
-                          max="6"
-                          value="0"
-                          class="order-qty-input"
-                        />
+                      <td
+                        style="width: 10%; text-align: center"
+                        class="total-price"
+                      >
+                        0円
                       </td>
-                      <td class="total-price">0</td>
                     </tr>
                     <tr>
-                      <td>品川店</td>
-                      <td>紅茶</td>
-                      <td>110</td>
-                      <td>7</td>
-                      <td>
-                        <input
-                          type="number"
-                          min="0"
-                          max="7"
-                          value="0"
-                          class="order-qty-input"
-                        />
+                      <td style="width: 10%; text-align: center">O001</td>
+                      <td style="width: 15%; text-align: center">新宿店</td>
+
+                      <td style="width: 20%; text-align: center">
+                        サンドイッチ
                       </td>
-                      <td class="total-price">0</td>
-                    </tr>
-                    <tr>
-                      <td>上野店</td>
-                      <td>カフェラテ</td>
-                      <td>150</td>
-                      <td>4</td>
-                      <td>
-                        <input
-                          type="number"
-                          min="0"
-                          max="4"
-                          value="0"
-                          class="order-qty-input"
-                        />
-                      </td>
-                      <td class="total-price">0</td>
-                    </tr>
-                    <tr>
-                      <td>中野店</td>
-                      <td>アイスコーヒー</td>
-                      <td>135</td>
-                      <td>9</td>
-                      <td>
-                        <input
-                          type="number"
-                          min="0"
-                          max="9"
-                          value="0"
-                          class="order-qty-input"
-                        />
-                      </td>
-                      <td class="total-price">0</td>
-                    </tr>
-                    <tr>
-                      <td>吉祥寺店</td>
-                      <td>サンドイッチ</td>
-                      <td>200</td>
-                      <td>3</td>
-                      <td>
-                        <input
-                          type="number"
-                          min="0"
-                          max="3"
-                          value="0"
-                          class="order-qty-input"
-                        />
-                      </td>
-                      <td class="total-price">0</td>
-                    </tr>
-                    <tr>
-                      <td>立川店</td>
-                      <td>オレンジジュース</td>
-                      <td>120</td>
-                      <td>5</td>
-                      <td>
+                      <td style="width: 15%; text-align: center">350円</td>
+                      <td style="width: 15%; text-align: center">5</td>
+                      <td style="width: 15%; text-align: center">
                         <input
                           type="number"
                           min="0"
                           max="5"
                           value="0"
                           class="order-qty-input"
+                          aria-label="サンドイッチの注文数量"
                         />
                       </td>
-                      <td class="total-price">0</td>
+                      <td
+                        style="width: 10%; text-align: center"
+                        class="total-price"
+                      >
+                        0円
+                      </td>
                     </tr>
                     <tr>
-                      <td>町田店</td>
-                      <td>ミルク</td>
-                      <td>100</td>
-                      <td>2</td>
-                      <td>
+                      <td style="width: 10%; text-align: center">O001</td>
+                      <td style="width: 15%; text-align: center">新宿店</td>
+
+                      <td style="width: 20%; text-align: center">紅茶</td>
+                      <td style="width: 15%; text-align: center">200円</td>
+                      <td style="width: 15%; text-align: center">7</td>
+                      <td style="width: 15%; text-align: center">
                         <input
                           type="number"
                           min="0"
-                          max="2"
+                          max="7"
                           value="0"
                           class="order-qty-input"
+                          aria-label="紅茶の注文数量"
                         />
                       </td>
-                      <td class="total-price">0</td>
+                      <td
+                        style="width: 10%; text-align: center"
+                        class="total-price"
+                      >
+                        0円
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="width: 10%; text-align: center">O001</td>
+                      <td style="width: 15%; text-align: center">新宿店</td>
+
+                      <td style="width: 20%; text-align: center">カフェラテ</td>
+                      <td style="width: 15%; text-align: center">250円</td>
+                      <td style="width: 15%; text-align: center">6</td>
+                      <td style="width: 15%; text-align: center">
+                        <input
+                          type="number"
+                          min="0"
+                          max="6"
+                          value="0"
+                          class="order-qty-input"
+                          aria-label="カフェラテの注文数量"
+                        />
+                      </td>
+                      <td
+                        style="width: 10%; text-align: center"
+                        class="total-price"
+                      >
+                        0円
+                      </td>
                     </tr>
                   </tbody>
                 </table>
+              </div>
+            </div>
+
+            <!-- 合計金額表示 -->
+            <div
+              style="
+                background: #e8f4fd;
+                border-radius: 8px;
+                padding: 16px;
+                border-left: 4px solid #2196f3;
+                text-align: right;
+              "
+            >
+              <div style="font-size: 1.1rem; font-weight: bold; color: #1976d2">
+                合計金額: <span id="grand-total">0円</span>
               </div>
             </div>
           </div>

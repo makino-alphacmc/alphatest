@@ -12,6 +12,7 @@
     </div>
     <div class="container">
       <div class="productlist-box order-confirm">
+        <h1>注文確認</h1>
         <div class="table-wrapper">
           <div class="order-confirm-outer">
             <div class="order-confirm-header">
@@ -21,9 +22,13 @@
               以下の内容でよろしければ「確定」ボタンを押してください。
             </p>
             <div class="order-confirm-inner">
-              <table class="product-table order-confirm-table">
+              <table
+                class="product-table order-confirm-table"
+                aria-label="注文確認テーブル"
+              >
                 <thead>
                   <tr>
+                    <th>注文ID</th>
                     <th>店舗名</th>
                     <th>商品名</th>
                     <th>販売価格</th>
@@ -34,31 +39,55 @@
                 <tbody>
                   <!-- ここにorderCart.htmlで選択された商品データが入ります -->
                   <tr>
+                    <td>O001</td>
                     <td>新宿店</td>
-                    <td>メロンソーダ</td>
-                    <td>120</td>
+                    <td>コーヒー</td>
+                    <td>130円</td>
                     <td>2</td>
-                    <td>240</td>
+                    <td>260円</td>
                   </tr>
                   <tr>
-                    <td>渋谷店</td>
-                    <td>コーヒー</td>
-                    <td>130</td>
+                    <td>O001</td>
+                    <td>新宿店</td>
+                    <td>メロンソーダ</td>
+                    <td>120円</td>
                     <td>1</td>
-                    <td>130</td>
+                    <td>120円</td>
                   </tr>
-                  <!-- 例としてダミーデータをいくつか入れています -->
+                  <tr>
+                    <td>O001</td>
+                    <td>新宿店</td>
+                    <td>サンドイッチ</td>
+                    <td>350円</td>
+                    <td>1</td>
+                    <td>350円</td>
+                  </tr>
+                  <tr>
+                    <td>O001</td>
+                    <td>新宿店</td>
+                    <td>紅茶</td>
+                    <td>200円</td>
+                    <td>2</td>
+                    <td>400円</td>
+                  </tr>
+                  <tr>
+                    <td>O001</td>
+                    <td>新宿店</td>
+                    <td>カフェラテ</td>
+                    <td>250円</td>
+                    <td>1</td>
+                    <td>250円</td>
+                  </tr>
                 </tbody>
                 <tfoot>
                   <tr>
                     <td
-                      colspan="4"
+                      colspan="5"
                       style="text-align: right; font-weight: bold"
                     >
                       合計金額:
                     </td>
-                    <td style="font-weight: bold">370</td>
-                    <!-- 例：合計金額 -->
+                    <td style="font-weight: bold">1,380円</td>
                   </tr>
                 </tfoot>
               </table>
