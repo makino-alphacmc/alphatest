@@ -7,22 +7,18 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
+    <h1 class="visually-hidden">店舗情報修正</h1>
     <div class="user-info-bar right">
       <span class="user-info-name">name さんでログイン中</span>
     </div>
     <div class="container">
-      <div class="productlist-box">
+      <div class="smstock-box">
         <form class="stock-form">
           <h2 class="stock-form-title">店舗更新</h2>
           <div class="form-group">
             <label for="shopId">店舗ID</label>
-            <input
-              type="text"
-              id="shopId"
-              name="shopId"
-              value="S001"
-              readonly
-            />
+            <input type="hidden" id="shopId" name="shopId" value="S001" />
+            <label id="shopIdTitle">S001</label>
           </div>
           <div class="form-group">
             <label for="shopName">店舗名</label>
