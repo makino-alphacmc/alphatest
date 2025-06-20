@@ -1089,15 +1089,20 @@ shopOrderList 用
   border-radius: 8px;
   box-shadow: 0 1px 6px #b3d9ff33;
   padding: 16px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  max-width: 400px;
+  margin: 0 auto;
 }
 .branchstep2-selected-item {
   background: #e8f4fd;
   border-radius: 8px;
-  padding: 12px;
+  padding: 12px 32px;
   border-left: 4px solid #2196f3;
+  min-width: 120px;
+  text-align: center;
 }
 .branchstep2-selected-item-text {
   font-weight: bold;
@@ -1411,6 +1416,8 @@ shopOrderList 用
   padding: 28px 24px 24px 24px;
   margin-bottom: 36px;
   border: 1.5px solid #b3d9ff;
+  max-width: 100%;
+  overflow-x: auto;
 }
 .smshop-note {
   margin-bottom: 18px;
@@ -1421,11 +1428,15 @@ shopOrderList 用
   box-shadow: 0 1px 6px #b3d9ff33;
   padding: 12px 8px;
   margin-bottom: 24px;
+  width: 100%;
+  overflow-x: auto;
+  box-sizing: border-box;
 }
 .smshop-table {
   margin-bottom: 0;
   width: 100%;
   min-width: 1200px;
+  box-sizing: border-box;
 }
 .smshop-th-center {
   text-align: center;
