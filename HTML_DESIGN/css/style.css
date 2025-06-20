@@ -1608,3 +1608,28 @@ shopOrderList 用
 .order-total-amount {
   font-weight: bold;
 }
+
+/* adminUser/prodList.html */
+.prodlist-scroll {
+  max-height: 350px;
+  overflow-y: auto;
+  border-radius: 8px;
+}
+
+.prodlist-th-center,
+.prodlist-td-center {
+  text-align: center;
+}
+
+.prodlist-tbody {
+  display: block;
+  max-height: 320px;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.prodlist-tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
