@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>商品選択</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <style>
+      .prodsearch2-table th,
+      .prodsearch2-table td {
+        text-align: center;
+        vertical-align: middle;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="user-info-bar right">
+      <span class="user-info-name">name さんでログイン中</span>
+    </div>
+    <div class="container">
+      <div class="productlist-box">
+        <h2>商品選択</h2>
+        <div class="table-wrapper">
+          <div class="prodsearch2-outer-box">
+            <div class="prodsearch2-shop-title">店舗：新宿店</div>
+
+            <form
+              th:action="@{/product/confirmCart}"
+              method="post"
+              th:object="${productCartForm}"
+            >
+              <div class="prodsearch2-inner-box">
+                <div class="order-history-scroll prodsearch2-scroll">
+                  <table
+                    class="product-table sticky-header-table prodsearch2-table"
+                  >
+                    <thead>
+                      <tr>
+                        <th class="radio-cell">選択</th>
+                        <th>商品名</th>
+                        <th>販売価格</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="radio-cell">
+                          <input
+                            type="checkbox"
+                            name="selectProduct"
+                            value="melon"
+                            aria-label="この商品を選択"
+                          />
+                        </td>
+                        <td>メロンソーダ</td>
+                        <td>120</td>
+                      </tr>
+                      <tr>
+                        <td class="radio-cell">
+                          <input
+                            type="checkbox"
+                            name="selectProduct"
+                            value="coffee"
+                            aria-label="この商品を選択"
+                          />
+                        </td>
+                        <td>コーヒー</td>
+                        <td>130</td>
+                      </tr>
+                      <tr>
+                        <td class="radio-cell">
+                          <input
+                            type="checkbox"
+                            name="selectProduct"
+                            value="cider"
+                            aria-label="この商品を選択"
+                          />
+                        </td>
+                        <td>サイダー</td>
+                        <td>125</td>
+                      </tr>
+                      <tr>
+                        <td class="radio-cell">
+                          <input
+                            type="checkbox"
+                            name="selectProduct"
+                            value="cola"
+                            aria-label="この商品を選択"
+                          />
+                        </td>
+                        <td>コーラ</td>
+                        <td>140</td>
+                      </tr>
+                      <tr>
+                        <td class="radio-cell">
+                          <input
+                            type="checkbox"
+                            name="selectProduct"
+                            value="tea"
+                            aria-label="この商品を選択"
+                          />
+                        </td>
+                        <td>紅茶</td>
+                        <td>110</td>
+                      </tr>
+                      <tr>
+                        <td class="radio-cell">
+                          <input
+                            type="checkbox"
+                            name="selectProduct"
+                            value="latte"
+                            aria-label="この商品を選択"
+                          />
+                        </td>
+                        <td>カフェラテ</td>
+                        <td>150</td>
+                      </tr>
+                      <tr>
+                        <td class="radio-cell">
+                          <input
+                            type="checkbox"
+                            name="selectProduct"
+                            value="icecoffee"
+                            aria-label="この商品を選択"
+                          />
+                        </td>
+                        <td>アイスコーヒー</td>
+                        <td>135</td>
+                      </tr>
+                      <tr>
+                        <td class="radio-cell">
+                          <input
+                            type="checkbox"
+                            name="selectProduct"
+                            value="sandwich"
+                            aria-label="この商品を選択"
+                          />
+                        </td>
+                        <td>サンドイッチ</td>
+                        <td>200</td>
+                      </tr>
+                      <tr>
+                        <td class="radio-cell">
+                          <input
+                            type="checkbox"
+                            name="selectProduct"
+                            value="orange"
+                            aria-label="この商品を選択"
+                          />
+                        </td>
+                        <td>オレンジジュース</td>
+                        <td>120</td>
+                      </tr>
+                      <tr>
+                        <td class="radio-cell">
+                          <input
+                            type="checkbox"
+                            name="selectProduct"
+                            value="milk"
+                            aria-label="この商品を選択"
+                          />
+                        </td>
+                        <td>ミルク</td>
+                        <td>100</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div class="productlist-buttons button-row-split">
+                <button
+                  class="back-btn"
+                  onclick="history.back(); return false;"
+                >
+                  戻る
+                </button>
+                <button
+                  class="order-btn primary"
+                  onclick="location.href='orderCart.html'; return false;"
+                >
+                  注文登録カートへ
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>店舗在庫リスト</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="user-info-bar right">
+      <span class="user-info-name">新宿店 name さんでログイン中</span>
+    </div>
+    <div class="container">
+      <div class="productlist-box">
+        <h2>店舗在庫リスト</h2>
+        <div class="table-wrapper">
+          <div class="smstocklist-outer-box">
+            <p class="note smstocklist-note">
+              登録されている商品の在庫一覧です。
+            </p>
+            <div class="smstocklist-inner-box">
+              <div class="smstocklist-scroll">
+                <form method="post" th:action="@{/shop/stock/delete}">
+                  <table class="product-table smstocklist-table">
+                    <thead class="smstocklist-thead">
+                      <tr>
+                        <th class="radio-cell smstocklist-th-center">選択</th>
+                        <th
+                          class="smstocklist-th-center"
+                          aria-label="商品ID"
+                          scope="col"
+                        >
+                          商品ID
+                        </th>
+                        <th
+                          class="smstocklist-th-center"
+                          aria-label="商品名"
+                          scope="col"
+                        >
+                          商品名
+                        </th>
+                        <th
+                          class="smstocklist-th-center"
+                          aria-label="金額"
+                          scope="col"
+                        >
+                          販売価格
+                        </th>
+                        <th
+                          class="smstocklist-th-center"
+                          aria-label="在庫数"
+                          scope="col"
+                        >
+                          在庫数
+                        </th>
+                        <th class="smstocklist-th-center">操作</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="radio-cell smstocklist-td-center">
+                          <label class="smstocklist-radio-label">
+                            <input
+                              type="radio"
+                              name="selectedStockId"
+                              value="101"
+                              id="stock-radio-melon"
+                            />
+                            <span class="visually-hidden"
+                              >メロンソーダを選択</span
+                            >
+                          </label>
+                        </td>
+                        <td class="smstocklist-td-center">101</td>
+                        <td class="smstocklist-td-center">メロンソーダ</td>
+                        <td class="smstocklist-td-center">120</td>
+                        <td class="smstocklist-td-center">50</td>
+                        <td class="smstocklist-td-center">
+                          <button
+                            class="update-btn"
+                            onclick="location.href='shopStock.html'; return false;"
+                          >
+                            更新
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="radio-cell smstocklist-td-center">
+                          <label class="smstocklist-radio-label">
+                            <input
+                              type="radio"
+                              name="selectedStockId"
+                              value="102"
+                              id="stock-radio-coffee"
+                            />
+                            <span class="visually-hidden">コーヒーを選択</span>
+                          </label>
+                        </td>
+                        <td class="smstocklist-td-center">102</td>
+                        <td class="smstocklist-td-center">コーヒー</td>
+                        <td class="smstocklist-td-center">130</td>
+                        <td class="smstocklist-td-center">20</td>
+                        <td class="smstocklist-td-center">
+                          <button
+                            class="update-btn"
+                            onclick="location.href='shopStock.html'; return false;"
+                          >
+                            更新
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="radio-cell smstocklist-td-center">
+                          <label class="smstocklist-radio-label">
+                            <input
+                              type="radio"
+                              name="selectedStockId"
+                              value="103"
+                              id="stock-radio-cider"
+                            />
+                            <span class="visually-hidden">サイダーを選択</span>
+                          </label>
+                        </td>
+                        <td class="smstocklist-td-center">103</td>
+                        <td class="smstocklist-td-center">サイダー</td>
+                        <td class="smstocklist-td-center">110</td>
+                        <td class="smstocklist-td-center">10</td>
+                        <td class="smstocklist-td-center">
+                          <button
+                            class="update-btn"
+                            onclick="location.href='shopStock.html'; return false;"
+                          >
+                            更新
+                          </button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="productlist-buttons button-row-split">
+            <button class="back-btn" onclick="history.back(); return false;">
+              戻る
+            </button>
+            <div class="action-buttons">
+              <button class="delete-btn" type="submit">削除</button>
+              <button
+                class="add-btn primary"
+                onclick="location.href='shopStockAdd.html'; return false;"
+              >
+                追加
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
