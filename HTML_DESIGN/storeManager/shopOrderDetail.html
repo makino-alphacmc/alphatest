@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>店舗注文明細</title>
+    <link rel="stylesheet" href="../../static/css/style.css" />
+  </head>
+  <body>
+    <div class="user-info-bar right">
+      <span class="user-info-name">新宿店 name さんでログイン中</span>
+    </div>
+    <div class="container">
+      <div class="productlist-box">
+        <h2>店舗注文明細・ステータス更新</h2>
+        <div class="table-wrapper">
+          <div class="smodetail-outer-box">
+            <div class="smodetail-inner-box">
+              <table class="product-table smodetail-table">
+                <thead>
+                  <tr>
+                    <th class="smodetail-th-center" scope="col">注文ID</th>
+                    <th class="smodetail-th-center" scope="col">日時</th>
+                    <th class="smodetail-th-center" scope="col">顧客名</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="smodetail-td-center">ORD001</td>
+                    <td class="smodetail-td-center">2023/10/26 10:30</td>
+                    <td class="smodetail-td-center">山田 太郎</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3 class="smodetail-item-title">商品明細</h3>
+            <div class="smodetail-inner-box">
+              <table class="product-table smodetail-table">
+                <thead>
+                  <tr>
+                    <th>商品名</th>
+                    <th>数量</th>
+                    <th>単価</th>
+                    <th>小計</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>メロンソーダ</td>
+                    <td>2</td>
+                    <td>120</td>
+                    <td>240</td>
+                  </tr>
+                  <tr>
+                    <td>コーヒー</td>
+                    <td>1</td>
+                    <td>130</td>
+                    <td>130</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan="3" class="smodetail-total-label">合計金額:</td>
+                    <td class="smodetail-total-value">370</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+
+            <form
+              class="status-form smodetail-status-form"
+              th:action="@{/shop/updateStatus}"
+              method="post"
+              th:object="${orderStatusForm}"
+            >
+              <div class="form-group smodetail-status-row">
+                <label for="orderStatus" class="smodetail-status-label"
+                  >注文ステータス:</label
+                >
+                <select
+                  id="orderStatus"
+                  name="orderStatus"
+                  class="smodetail-status-select"
+                  th:field="*{orderStatus}"
+                >
+                  <option value="order_registration">注文登録</option>
+                  <option value="reception">受付</option>
+                  <option value="shipping">発送</option>
+                </select>
+              </div>
+              <div class="productlist-buttons button-row-split">
+                <button
+                  class="back-btn"
+                  onclick="history.back(); return false;"
+                >
+                  戻る
+                </button>
+                <button class="order-btn primary" type="submit">更新</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>店舗情報更新</title>
+    <link rel="stylesheet" href="../../static/css/style.css" />
+  </head>
+  <body>
+    <div class="user-info-bar right">
+      <span class="user-info-name">新宿店 name さんでログイン中</span>
+    </div>
+    <div class="container">
+      <div class="productlist-box">
+        <h2>店舗情報更新</h2>
+        <div class="table-wrapper">
+          <div class="smshop-outer-box">
+            <p class="note smshop-note">
+              各店舗情報を直接編集し、「更新」ボタンで保存してください。
+            </p>
+            <div class="smshop-inner-box">
+              <form
+                th:action="@{/shop/update}"
+                method="post"
+                th:object="${shopForm}"
+              >
+                <table class="product-table smshop-table">
+                  <thead>
+                    <tr>
+                      <th class="smshop-th-center">店舗ID</th>
+                      <th class="smshop-th-center">店舗名</th>
+                      <th class="smshop-th-center">郵便番号</th>
+                      <th class="smshop-th-center">住所</th>
+                      <th class="smshop-th-center">電話番号</th>
+                      <th class="smshop-th-center">メールアドレス</th>
+                      <th class="smshop-th-center">操作</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="smshop-td-center" th:text="*{shopId}">S001</td>
+                      <td class="smshop-td-center">
+                        <input
+                          type="text"
+                          th:field="*{shopName}"
+                          class="smshop-input smshop-input-company"
+                          required
+                        />
+                      </td>
+                      <td class="smshop-td-center">
+                        <input
+                          type="text"
+                          th:field="*{zipcode}"
+                          class="smshop-input smshop-input-zip"
+                          required
+                        />
+                      </td>
+                      <td class="smshop-td-center">
+                        <input
+                          type="text"
+                          th:field="*{address}"
+                          class="smshop-input smshop-input-address"
+                          required
+                        />
+                      </td>
+                      <td class="smshop-td-center">
+                        <input
+                          type="text"
+                          th:field="*{tel}"
+                          class="smshop-input smshop-input-tel"
+                          required
+                        />
+                      </td>
+                      <td class="smshop-td-center">
+                        <input
+                          type="email"
+                          th:field="*{email}"
+                          class="smshop-input smshop-input-email"
+                          required
+                        />
+                      </td>
+                      <td class="smshop-td-center">
+                        <button class="order-btn primary" type="submit">
+                          更新
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="productlist-buttons button-row-split">
+          <button class="back-btn" onclick="history.back(); return false;">
+            戻る
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

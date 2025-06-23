@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>店舗注文リスト</title>
+    <link rel="stylesheet" href="../../static/css/style.css" />
+  </head>
+  <body>
+    <div class="user-info-bar right">
+      <span class="user-info-name">新宿店 name さんでログイン中</span>
+    </div>
+    <div class="container">
+      <div class="productlist-box">
+        <h2>店舗注文リスト</h2>
+        <div class="table-wrapper">
+          <div class="smorderlist-outer-box">
+            <form
+              th:action="@{/shop/selectOrder}"
+              method="post"
+              th:object="${shopOrderSelectForm}"
+            >
+              <div class="table-wrapper">
+                <table class="product-table">
+                  <thead>
+                    <tr>
+                      <th class="radio-cell">選択</th>
+                      <th>注文ID</th>
+                      <th>日時</th>
+                      <th>顧客名</th>
+                      <th>合計金額</th>
+                      <th>ステータス</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="radio-cell">
+                        <input
+                          type="radio"
+                          th:field="*{selectedOrderId}"
+                          value="ORD001"
+                          aria-label="この注文を選択"
+                        />
+                      </td>
+                      <td>ORD001</td>
+                      <td>2023/10/26 10:30</td>
+                      <td>山田 太郎</td>
+                      <td>1,500円</td>
+                      <td>受付</td>
+                    </tr>
+                    <tr>
+                      <td class="radio-cell">
+                        <input
+                          type="radio"
+                          th:field="*{selectedOrderId}"
+                          value="ORD002"
+                          aria-label="この注文を選択"
+                        />
+                      </td>
+                      <td>ORD002</td>
+                      <td>2023/10/25 14:00</td>
+                      <td>鈴木 花子</td>
+                      <td>2,800円</td>
+                      <td>発送</td>
+                    </tr>
+                    <tr>
+                      <td class="radio-cell">
+                        <input
+                          type="radio"
+                          th:field="*{selectedOrderId}"
+                          value="ORD003"
+                          aria-label="この注文を選択"
+                        />
+                      </td>
+                      <td>ORD003</td>
+                      <td>2023/10/24 09:15</td>
+                      <td>田中 健太</td>
+                      <td>500円</td>
+                      <td>到着完了</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="productlist-buttons button-row-split">
+                <button
+                  class="back-btn"
+                  onclick="history.back(); return false;"
+                >
+                  戻る
+                </button>
+                <button
+                  class="order-btn primary"
+                  onclick="location.href='shopOrderDetail.html'; return false;"
+                >
+                  詳細
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
