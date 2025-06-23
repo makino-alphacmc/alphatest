@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>新規店舗登録</title>
+    <link rel="stylesheet" href="../../static/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="smstock-box">
+        <form
+          class="stock-form"
+          method="post"
+          th:action="@{/shop/new}"
+          th:object="${shopForm}"
+        >
+          <h2 class="stock-form-title">店舗追加</h2>
+          <div class="form-group">
+            <label for="shopId">店舗ID</label>
+            <input
+              type="text"
+              id="shopId"
+              name="shopId"
+              th:field="*{shopId}"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="shopName">店舗名</label>
+            <input
+              type="text"
+              id="shopName"
+              name="shopName"
+              th:field="*{shopName}"
+              required
+            />
+          </div>
+          <div class="productlist-buttons button-row-split">
+            <button
+              class="back-btn"
+              onclick="location.href='shopList.html'; return false;"
+            >
+              キャンセル
+            </button>
+            <button class="order-btn primary" type="submit">登録</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

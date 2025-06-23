@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>店舗情報修正</title>
+    <link rel="stylesheet" href="../../static/css/style.css" />
+  </head>
+  <body>
+    <h1 class="visually-hidden">店舗情報修正</h1>
+    <div class="user-info-bar right">
+      <span class="user-info-name">name さんでログイン中</span>
+    </div>
+    <div class="container">
+      <div class="smstock-box">
+        <form class="stock-form" th:action="@{/shop/update}" method="post">
+          <h2 class="stock-form-title">店舗更新</h2>
+          <div class="form-group">
+            <label for="shopId">店舗ID</label>
+            <input
+              type="hidden"
+              id="shopId"
+              name="shopId"
+              th:value="${shopForm.shopId}"
+              value="S001"
+            />
+            <label id="shopIdTitle" th:text="${shopForm.shopId}">S001</label>
+          </div>
+          <div class="form-group">
+            <label for="shopName">店舗名</label>
+            <input
+              type="text"
+              id="shopName"
+              name="shopName"
+              th:value="${shopForm.shopName}"
+              value="東京本店"
+              required
+            />
+          </div>
+          <div class="productlist-buttons button-row-split">
+            <button
+              class="back-btn"
+              onclick="location.href='shopList.html'; return false;"
+            >
+              キャンセル
+            </button>
+            <button class="order-btn primary" type="submit">更新</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
