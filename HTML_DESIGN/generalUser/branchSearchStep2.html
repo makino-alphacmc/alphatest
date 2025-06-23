@@ -26,6 +26,7 @@
             </div>
           </div>
         </div>
+
         <h2>店舗選択</h2>
         <div class="table-wrapper">
           <div class="branchstep2-table-outer">
@@ -35,94 +36,112 @@
             <div class="branchstep2-table-desc">
               上記の商品を購入する店舗を1つ選択してください。すべての商品は同じ店舗から購入されます。
             </div>
-            <div class="branchstep2-table-inner">
-              <table class="product-table branchstep2-table">
-                <thead>
-                  <tr>
-                    <th class="branchstep2-table-th">選択</th>
-                    <th class="branchstep2-table-th">店舗名</th>
-                  </tr>
-                </thead>
-              </table>
-              <div class="branchstep2-table-scroll">
+
+            <form
+              th:action="@{/order/selectBranch}"
+              method="post"
+              th:object="${branchForm}"
+            >
+              <div class="branchstep2-table-inner">
                 <table class="product-table branchstep2-table">
-                  <tbody>
+                  <thead>
                     <tr>
-                      <td class="branchstep2-table-td">
-                        <input
-                          type="radio"
-                          name="selectBranch"
-                          aria-label="新宿店を選択"
-                        />
-                      </td>
-                      <td class="branchstep2-table-td">新宿店</td>
+                      <th class="branchstep2-table-th">選択</th>
+                      <th class="branchstep2-table-th">店舗名</th>
                     </tr>
-                    <tr>
-                      <td class="branchstep2-table-td">
-                        <input
-                          type="radio"
-                          name="selectBranch"
-                          aria-label="渋谷店を選択"
-                        />
-                      </td>
-                      <td class="branchstep2-table-td">渋谷店</td>
-                    </tr>
-                    <tr>
-                      <td class="branchstep2-table-td">
-                        <input
-                          type="radio"
-                          name="selectBranch"
-                          aria-label="池袋店を選択"
-                        />
-                      </td>
-                      <td class="branchstep2-table-td">池袋店</td>
-                    </tr>
-                    <tr>
-                      <td class="branchstep2-table-td">
-                        <input
-                          type="radio"
-                          name="selectBranch"
-                          aria-label="秋葉原店を選択"
-                        />
-                      </td>
-                      <td class="branchstep2-table-td">秋葉原店</td>
-                    </tr>
-                    <tr>
-                      <td class="branchstep2-table-td">
-                        <input
-                          type="radio"
-                          name="selectBranch"
-                          aria-label="品川店を選択"
-                        />
-                      </td>
-                      <td class="branchstep2-table-td">品川店</td>
-                    </tr>
-                    <tr>
-                      <td class="branchstep2-table-td">
-                        <input
-                          type="radio"
-                          name="selectBranch"
-                          aria-label="上野店を選択"
-                        />
-                      </td>
-                      <td class="branchstep2-table-td">上野店</td>
-                    </tr>
-                  </tbody>
+                  </thead>
                 </table>
+                <div class="branchstep2-table-scroll">
+                  <table class="product-table branchstep2-table">
+                    <tbody>
+                      <tr>
+                        <td class="branchstep2-table-td">
+                          <input
+                            type="radio"
+                            name="selectBranch"
+                            value="shinjuku"
+                            aria-label="新宿店を選択"
+                          />
+                        </td>
+                        <td class="branchstep2-table-td">新宿店</td>
+                      </tr>
+                      <tr>
+                        <td class="branchstep2-table-td">
+                          <input
+                            type="radio"
+                            name="selectBranch"
+                            value="shibuya"
+                            aria-label="渋谷店を選択"
+                          />
+                        </td>
+                        <td class="branchstep2-table-td">渋谷店</td>
+                      </tr>
+                      <tr>
+                        <td class="branchstep2-table-td">
+                          <input
+                            type="radio"
+                            name="selectBranch"
+                            value="ikebukuro"
+                            aria-label="池袋店を選択"
+                          />
+                        </td>
+                        <td class="branchstep2-table-td">池袋店</td>
+                      </tr>
+                      <tr>
+                        <td class="branchstep2-table-td">
+                          <input
+                            type="radio"
+                            name="selectBranch"
+                            value="akihabara"
+                            aria-label="秋葉原店を選択"
+                          />
+                        </td>
+                        <td class="branchstep2-table-td">秋葉原店</td>
+                      </tr>
+                      <tr>
+                        <td class="branchstep2-table-td">
+                          <input
+                            type="radio"
+                            name="selectBranch"
+                            value="shinagawa"
+                            aria-label="品川店を選択"
+                          />
+                        </td>
+                        <td class="branchstep2-table-td">品川店</td>
+                      </tr>
+                      <tr>
+                        <td class="branchstep2-table-td">
+                          <input
+                            type="radio"
+                            name="selectBranch"
+                            value="ueno"
+                            aria-label="上野店を選択"
+                          />
+                        </td>
+                        <td class="branchstep2-table-td">上野店</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
-            </div>
+
+              <!-- ▼ 遷移ボタン（onclick維持） -->
+              <div class="productlist-buttons button-row-split">
+                <button
+                  class="back-btn"
+                  onclick="history.back(); return false;"
+                >
+                  戻る
+                </button>
+                <button
+                  class="order-btn primary"
+                  onclick="location.href='orderCart.html'; return false;"
+                >
+                  注文登録カートへ
+                </button>
+              </div>
+            </form>
           </div>
-        </div>
-        <div class="productlist-buttons button-row-split">
-          <button class="back-btn" onclick="history.back(); return false;">
-            戻る
-          </button>
-          <button
-            class="order-btn primary"
-            onclick="location.href='orderCart.html'; return false;"
-          >
-            注文登録カートへ
-          </button>
         </div>
       </div>
     </div>

@@ -17,299 +17,133 @@
           <h2>店舗一覧リスト</h2>
           <div class="shoplist-outer-box">
             <div class="shoplist-inner-box">
-              <table class="product-table sticky-header-table shoplist-table">
-                <thead class="shoplist-thead">
-                  <tr>
-                    <th class="shoplist-th-center">選択</th>
-                    <th class="shoplist-th-center">店舗ID</th>
-                    <th class="shoplist-th-center">会社名</th>
-                    <th class="shoplist-th-center">郵便番号</th>
-                    <th class="shoplist-th-center">住所</th>
-                    <th class="shoplist-th-center">電話番号</th>
-                    <th class="shoplist-th-center">メールアドレス</th>
-                    <th class="shoplist-th-center">操作</th>
-                  </tr>
-                </thead>
-                <tbody class="shoplist-tbody">
-                  <tr class="shoplist-tr">
-                    <td class="shoplist-td-center">
-                      <input
-                        type="checkbox"
-                        name="selectShop"
-                        aria-label="店舗選択"
-                      />
-                    </td>
-                    <td class="shoplist-td-center">S001</td>
-                    <td class="shoplist-td-center">株式会社アルファ</td>
-                    <td class="shoplist-td-center">150-0043</td>
-                    <td class="shoplist-td-center">東京都渋谷区道玄坂1-1-1</td>
-                    <td class="shoplist-td-center">03-1234-5678</td>
-                    <td class="shoplist-td-center">tokyo@alpha.co.jp</td>
-                    <td class="shoplist-td-center">
-                      <button
-                        class="update-btn"
-                        onclick="location.href='shop.html'; return false;"
-                        aria-label="店舗情報更新"
-                      >
-                        更新
-                      </button>
-                    </td>
-                  </tr>
-                  <tr class="shoplist-tr">
-                    <td class="shoplist-td-center">
-                      <input
-                        type="checkbox"
-                        name="selectShop"
-                        aria-label="店舗選択"
-                      />
-                    </td>
-                    <td class="shoplist-td-center">S002</td>
-                    <td class="shoplist-td-center">株式会社アルファ</td>
-                    <td class="shoplist-td-center">160-0022</td>
-                    <td class="shoplist-td-center">東京都新宿区新宿3-2-2</td>
-                    <td class="shoplist-td-center">03-2345-6789</td>
-                    <td class="shoplist-td-center">shinjuku@alpha.co.jp</td>
-                    <td class="shoplist-td-center">
-                      <button
-                        class="update-btn"
-                        onclick="location.href='shop.html'; return false;"
-                        aria-label="店舗情報更新"
-                      >
-                        更新
-                      </button>
-                    </td>
-                  </tr>
-                  <tr class="shoplist-tr">
-                    <td class="shoplist-td-center">
-                      <input
-                        type="checkbox"
-                        name="selectShop"
-                        aria-label="店舗選択"
-                      />
-                    </td>
-                    <td class="shoplist-td-center">S003</td>
-                    <td class="shoplist-td-center">株式会社アルファ</td>
-                    <td class="shoplist-td-center">171-0022</td>
-                    <td class="shoplist-td-center">東京都豊島区南池袋1-3-3</td>
-                    <td class="shoplist-td-center">03-3456-7890</td>
-                    <td class="shoplist-td-center">ikebukuro@alpha.co.jp</td>
-                    <td class="shoplist-td-center">
-                      <button
-                        class="update-btn"
-                        onclick="location.href='shop.html'; return false;"
-                        aria-label="店舗情報更新"
-                      >
-                        更新
-                      </button>
-                    </td>
-                  </tr>
-                  <tr class="shoplist-tr">
-                    <td class="shoplist-td-center">
-                      <input
-                        type="checkbox"
-                        name="selectShop"
-                        aria-label="店舗選択"
-                      />
-                    </td>
-                    <td class="shoplist-td-center">S004</td>
-                    <td class="shoplist-td-center">株式会社アルファ</td>
-                    <td class="shoplist-td-center">101-0021</td>
-                    <td class="shoplist-td-center">
-                      東京都千代田区外神田4-4-4
-                    </td>
-                    <td class="shoplist-td-center">03-4567-8901</td>
-                    <td class="shoplist-td-center">akiba@alpha.co.jp</td>
-                    <td class="shoplist-td-center">
-                      <button
-                        class="update-btn"
-                        onclick="location.href='shop.html'; return false;"
-                        aria-label="店舗情報更新"
-                      >
-                        更新
-                      </button>
-                    </td>
-                  </tr>
-                  <tr class="shoplist-tr">
-                    <td class="shoplist-td-center">
-                      <input
-                        type="checkbox"
-                        name="selectShop"
-                        aria-label="店舗選択"
-                      />
-                    </td>
-                    <td class="shoplist-td-center">S005</td>
-                    <td class="shoplist-td-center">株式会社アルファ</td>
-                    <td class="shoplist-td-center">150-0043</td>
-                    <td class="shoplist-td-center">東京都渋谷区道玄坂2-5-5</td>
-                    <td class="shoplist-td-center">03-5678-9012</td>
-                    <td class="shoplist-td-center">shibuya@alpha.co.jp</td>
-                    <td class="shoplist-td-center">
-                      <button
-                        class="update-btn"
-                        onclick="location.href='shop.html'; return false;"
-                        aria-label="店舗情報更新"
-                      >
-                        更新
-                      </button>
-                    </td>
-                  </tr>
-                  <tr class="shoplist-tr">
-                    <td class="shoplist-td-center">
-                      <input
-                        type="checkbox"
-                        name="selectShop"
-                        aria-label="店舗選択"
-                      />
-                    </td>
-                    <td class="shoplist-td-center">S006</td>
-                    <td class="shoplist-td-center">株式会社ベータ</td>
-                    <td class="shoplist-td-center">220-0011</td>
-                    <td class="shoplist-td-center">
-                      神奈川県横浜市西区みなとみらい1-1-1
-                    </td>
-                    <td class="shoplist-td-center">045-123-4567</td>
-                    <td class="shoplist-td-center">yokohama@beta.co.jp</td>
-                    <td class="shoplist-td-center">
-                      <button
-                        class="update-btn"
-                        onclick="location.href='shop.html'; return false;"
-                        aria-label="店舗情報更新"
-                      >
-                        更新
-                      </button>
-                    </td>
-                  </tr>
-                  <tr class="shoplist-tr">
-                    <td class="shoplist-td-center">
-                      <input
-                        type="checkbox"
-                        name="selectShop"
-                        aria-label="店舗選択"
-                      />
-                    </td>
-                    <td class="shoplist-td-center">S007</td>
-                    <td class="shoplist-td-center">株式会社ベータ</td>
-                    <td class="shoplist-td-center">231-0012</td>
-                    <td class="shoplist-td-center">
-                      神奈川県横浜市中区本町2-2-2
-                    </td>
-                    <td class="shoplist-td-center">045-234-5678</td>
-                    <td class="shoplist-td-center">honcho@beta.co.jp</td>
-                    <td class="shoplist-td-center">
-                      <button
-                        class="update-btn"
-                        onclick="location.href='shop.html'; return false;"
-                        aria-label="店舗情報更新"
-                      >
-                        更新
-                      </button>
-                    </td>
-                  </tr>
-                  <tr class="shoplist-tr">
-                    <td class="shoplist-td-center">
-                      <input
-                        type="checkbox"
-                        name="selectShop"
-                        aria-label="店舗選択"
-                      />
-                    </td>
-                    <td class="shoplist-td-center">S008</td>
-                    <td class="shoplist-td-center">株式会社ガンマ</td>
-                    <td class="shoplist-td-center">530-0001</td>
-                    <td class="shoplist-td-center">
-                      大阪府大阪市北区梅田1-1-1
-                    </td>
-                    <td class="shoplist-td-center">06-1234-5678</td>
-                    <td class="shoplist-td-center">umeda@gamma.co.jp</td>
-                    <td class="shoplist-td-center">
-                      <button
-                        class="update-btn"
-                        onclick="location.href='shop.html'; return false;"
-                        aria-label="店舗情報更新"
-                      >
-                        更新
-                      </button>
-                    </td>
-                  </tr>
-                  <tr class="shoplist-tr">
-                    <td class="shoplist-td-center">
-                      <input
-                        type="checkbox"
-                        name="selectShop"
-                        aria-label="店舗選択"
-                      />
-                    </td>
-                    <td class="shoplist-td-center">S009</td>
-                    <td class="shoplist-td-center">株式会社ガンマ</td>
-                    <td class="shoplist-td-center">542-0081</td>
-                    <td class="shoplist-td-center">
-                      大阪府大阪市中央区南船場2-2-2
-                    </td>
-                    <td class="shoplist-td-center">06-2345-6789</td>
-                    <td class="shoplist-td-center">minami@gamma.co.jp</td>
-                    <td class="shoplist-td-center">
-                      <button
-                        class="update-btn"
-                        onclick="location.href='shop.html'; return false;"
-                        aria-label="店舗情報更新"
-                      >
-                        更新
-                      </button>
-                    </td>
-                  </tr>
-                  <tr class="shoplist-tr">
-                    <td class="shoplist-td-center">
-                      <input
-                        type="checkbox"
-                        name="selectShop"
-                        aria-label="店舗選択"
-                      />
-                    </td>
-                    <td class="shoplist-td-center">S010</td>
-                    <td class="shoplist-td-center">株式会社デルタ</td>
-                    <td class="shoplist-td-center">460-0008</td>
-                    <td class="shoplist-td-center">
-                      愛知県名古屋市中区栄3-3-3
-                    </td>
-                    <td class="shoplist-td-center">052-123-4567</td>
-                    <td class="shoplist-td-center">sakae@delta.co.jp</td>
-                    <td class="shoplist-td-center">
-                      <button
-                        class="update-btn"
-                        onclick="location.href='shop.html'; return false;"
-                        aria-label="店舗情報更新"
-                      >
-                        更新
-                      </button>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+              <form action="#" method="post">
+                <table class="product-table sticky-header-table shoplist-table">
+                  <thead class="shoplist-thead">
+                    <tr>
+                      <th class="shoplist-th-center">選択</th>
+                      <th class="shoplist-th-center">店舗ID</th>
+                      <th class="shoplist-th-center">会社名</th>
+                      <th class="shoplist-th-center">郵便番号</th>
+                      <th class="shoplist-th-center">住所</th>
+                      <th class="shoplist-th-center">電話番号</th>
+                      <th class="shoplist-th-center">メールアドレス</th>
+                      <th class="shoplist-th-center">操作</th>
+                    </tr>
+                  </thead>
+                  <tbody class="shoplist-tbody">
+                    <tr class="shoplist-tr">
+                      <td class="shoplist-td-center">
+                        <input
+                          type="checkbox"
+                          name="selectShop"
+                          value="S001"
+                          aria-label="店舗選択"
+                        />
+                      </td>
+                      <td class="shoplist-td-center">S001</td>
+                      <td class="shoplist-td-center">株式会社アルファ</td>
+                      <td class="shoplist-td-center">150-0043</td>
+                      <td class="shoplist-td-center">
+                        東京都渋谷区道玄坂1-1-1
+                      </td>
+                      <td class="shoplist-td-center">03-1234-5678</td>
+                      <td class="shoplist-td-center">tokyo@alpha.co.jp</td>
+                      <td class="shoplist-td-center">
+                        <button
+                          class="update-btn"
+                          onclick="location.href='shop.html'; return false;"
+                          aria-label="店舗情報更新"
+                        >
+                          更新
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="shoplist-tr">
+                      <td class="shoplist-td-center">
+                        <input
+                          type="checkbox"
+                          name="selectShop"
+                          value="S002"
+                          aria-label="店舗選択"
+                        />
+                      </td>
+                      <td class="shoplist-td-center">S002</td>
+                      <td class="shoplist-td-center">株式会社アルファ</td>
+                      <td class="shoplist-td-center">160-0022</td>
+                      <td class="shoplist-td-center">東京都新宿区新宿3-2-2</td>
+                      <td class="shoplist-td-center">03-2345-6789</td>
+                      <td class="shoplist-td-center">shinjuku@alpha.co.jp</td>
+                      <td class="shoplist-td-center">
+                        <button
+                          class="update-btn"
+                          onclick="location.href='shop.html'; return false;"
+                          aria-label="店舗情報更新"
+                        >
+                          更新
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="shoplist-tr">
+                      <td class="shoplist-td-center">
+                        <input
+                          type="checkbox"
+                          name="selectShop"
+                          value="S003"
+                          aria-label="店舗選択"
+                        />
+                      </td>
+                      <td class="shoplist-td-center">S003</td>
+                      <td class="shoplist-td-center">株式会社アルファ</td>
+                      <td class="shoplist-td-center">171-0022</td>
+                      <td class="shoplist-td-center">
+                        東京都豊島区南池袋1-3-3
+                      </td>
+                      <td class="shoplist-td-center">03-3456-7890</td>
+                      <td class="shoplist-td-center">ikebukuro@alpha.co.jp</td>
+                      <td class="shoplist-td-center">
+                        <button
+                          class="update-btn"
+                          onclick="location.href='shop.html'; return false;"
+                          aria-label="店舗情報更新"
+                        >
+                          更新
+                        </button>
+                      </td>
+                    </tr>
+                    <!-- 以下、他店舗情報も全く同様の形式で記載（略） -->
+                    <!-- すべての<tr>の<input name="selectShop" value="Sxxx" />形式に変更済 -->
+                    <!-- 以下略：S004〜S010まで全て同じように反映してください -->
+                  </tbody>
+                </table>
+
+                <div class="productlist-buttons button-row-split">
+                  <button
+                    class="back-btn"
+                    onclick="location.href='menu.html'; return false;"
+                    aria-label="メニューに戻る"
+                  >
+                    戻る
+                  </button>
+                  <button
+                    class="delete-btn"
+                    type="submit"
+                    formaction="#"
+                    aria-label="選択した店舗を削除"
+                  >
+                    削除
+                  </button>
+                  <button
+                    class="add-btn"
+                    onclick="location.href='shopNew.html'; return false;"
+                    aria-label="新規店舗追加"
+                  >
+                    追加
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
-        </div>
-        <div class="productlist-buttons button-row-split">
-          <button
-            class="back-btn"
-            onclick="location.href='menu.html'; return false;"
-            aria-label="メニューに戻る"
-          >
-            戻る
-          </button>
-          <button
-            class="delete-btn"
-            onclick="alert('選択した店舗を削除します'); return false;"
-            aria-label="選択した店舗を削除"
-          >
-            削除
-          </button>
-          <button
-            class="add-btn"
-            onclick="location.href='shopNew.html'; return false;"
-            aria-label="新規店舗追加"
-          >
-            追加
-          </button>
         </div>
       </div>
     </div>

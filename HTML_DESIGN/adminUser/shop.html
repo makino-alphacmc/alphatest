@@ -13,12 +13,18 @@
     </div>
     <div class="container">
       <div class="smstock-box">
-        <form class="stock-form">
+        <form class="stock-form" th:action="@{/shop/update}" method="post">
           <h2 class="stock-form-title">店舗更新</h2>
           <div class="form-group">
             <label for="shopId">店舗ID</label>
-            <input type="hidden" id="shopId" name="shopId" value="S001" />
-            <label id="shopIdTitle">S001</label>
+            <input
+              type="hidden"
+              id="shopId"
+              name="shopId"
+              th:value="${shopForm.shopId}"
+              value="S001"
+            />
+            <label id="shopIdTitle" th:text="${shopForm.shopId}">S001</label>
           </div>
           <div class="form-group">
             <label for="shopName">店舗名</label>
@@ -26,6 +32,7 @@
               type="text"
               id="shopName"
               name="shopName"
+              th:value="${shopForm.shopName}"
               value="東京本店"
               required
             />

@@ -1645,3 +1645,68 @@ shopOrderList 用
   width: 100%;
   table-layout: fixed;
 }
+
+/* ユーザ一覧用テーブル外枠 */
+.userlist-table-outer {
+  background: #f7faff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px #b3d9ff55;
+  padding: 28px 24px 24px 24px;
+  margin-bottom: 36px;
+  border: 1.5px solid #b3d9ff;
+}
+.userlist-table-scroll {
+  position: relative;
+  max-height: 320px;
+  overflow-y: auto;
+  border-radius: 8px;
+}
+.userlist-table-xscroll {
+  overflow-x: auto;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.userlist-table {
+  min-width: 1200px;
+  width: 100%;
+  margin-bottom: 0;
+}
+.userlist-thead {
+  position: sticky;
+  top: 0;
+  background: #f7faff;
+  z-index: 1;
+}
+.userlist-th-center {
+  text-align: center;
+}
+.userlist-th-1 {
+  width: 60px;
+}
+.userlist-th-2 {
+  width: 90px;
+}
+.userlist-th-3 {
+  width: 120px;
+}
+.userlist-th-4 {
+  width: 100px;
+}
+.userlist-th-5 {
+  width: 200px;
+}
+.userlist-th-6 {
+  width: 100px;
+}
+.userlist-th-7 {
+  width: 180px;
+}
+.userlist-th-8 {
+  width: 90px;
+}
+.userlist-th-9 {
+  width: 70px;
+}
+.userlist-td-center {
+  text-align: center;
+}

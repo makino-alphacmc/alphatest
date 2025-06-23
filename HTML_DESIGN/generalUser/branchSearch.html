@@ -16,190 +16,213 @@
         <div class="table-wrapper">
           <div class="branchsearch-outer-box">
             <p class="note branchsearch-note">※店舗を選択して下さい</p>
-            <div class="branchsearch-inner-box">
-              <div class="order-history-scroll branchsearch-scroll">
-                <table
-                  class="product-table sticky-header-table branchlist branchsearch-table"
-                >
-                  <thead>
-                    <tr>
-                      <th class="radio-cell">選択</th>
-                      <th class="branch-name-th">店舗名</th>
-                    </tr>
-                  </thead>
-                  <tbody class="branchsearch-tbody">
-                    <tr class="branchsearch-tr">
-                      <td class="radio-cell">
-                        <input
-                          type="radio"
-                          name="selectBranch"
-                          id="branch-radio-shinjuku"
-                          aria-label="新宿店を選択"
-                        />
-                        <label
-                          for="branch-radio-shinjuku"
-                          class="visually-hidden"
-                          >新宿店を選択</label
-                        >
-                      </td>
-                      <td class="branch-name-td">新宿店</td>
-                    </tr>
-                    <tr class="branchsearch-tr">
-                      <td class="radio-cell">
-                        <input
-                          type="radio"
-                          name="selectBranch"
-                          id="branch-radio-shibuya"
-                          aria-label="渋谷店を選択"
-                        />
-                        <label
-                          for="branch-radio-shibuya"
-                          class="visually-hidden"
-                          >渋谷店を選択</label
-                        >
-                      </td>
-                      <td class="branch-name-td">渋谷店</td>
-                    </tr>
-                    <tr class="branchsearch-tr">
-                      <td class="radio-cell">
-                        <input
-                          type="radio"
-                          name="selectBranch"
-                          id="branch-radio-ikebukuro"
-                          aria-label="池袋店を選択"
-                        />
-                        <label
-                          for="branch-radio-ikebukuro"
-                          class="visually-hidden"
-                          >池袋店を選択</label
-                        >
-                      </td>
-                      <td class="branch-name-td">池袋店</td>
-                    </tr>
-                    <tr class="branchsearch-tr">
-                      <td class="radio-cell">
-                        <input
-                          type="radio"
-                          name="selectBranch"
-                          id="branch-radio-akihabara"
-                          aria-label="秋葉原店を選択"
-                        />
-                        <label
-                          for="branch-radio-akihabara"
-                          class="visually-hidden"
-                          >秋葉原店を選択</label
-                        >
-                      </td>
-                      <td class="branch-name-td">秋葉原店</td>
-                    </tr>
-                    <tr class="branchsearch-tr">
-                      <td class="radio-cell">
-                        <input
-                          type="radio"
-                          name="selectBranch"
-                          id="branch-radio-shinagawa"
-                          aria-label="品川店を選択"
-                        />
-                        <label
-                          for="branch-radio-shinagawa"
-                          class="visually-hidden"
-                          >品川店を選択</label
-                        >
-                      </td>
-                      <td class="branch-name-td">品川店</td>
-                    </tr>
-                    <tr class="branchsearch-tr">
-                      <td class="radio-cell">
-                        <input
-                          type="radio"
-                          name="selectBranch"
-                          id="branch-radio-ueno"
-                          aria-label="上野店を選択"
-                        />
-                        <label for="branch-radio-ueno" class="visually-hidden"
-                          >上野店を選択</label
-                        >
-                      </td>
-                      <td class="branch-name-td">上野店</td>
-                    </tr>
-                    <tr class="branchsearch-tr">
-                      <td class="radio-cell">
-                        <input
-                          type="radio"
-                          name="selectBranch"
-                          id="branch-radio-nakano"
-                          aria-label="中野店を選択"
-                        />
-                        <label for="branch-radio-nakano" class="visually-hidden"
-                          >中野店を選択</label
-                        >
-                      </td>
-                      <td class="branch-name-td">中野店</td>
-                    </tr>
-                    <tr class="branchsearch-tr">
-                      <td class="radio-cell">
-                        <input
-                          type="radio"
-                          name="selectBranch"
-                          id="branch-radio-kichijoji"
-                          aria-label="吉祥寺店を選択"
-                        />
-                        <label
-                          for="branch-radio-kichijoji"
-                          class="visually-hidden"
-                          >吉祥寺店を選択</label
-                        >
-                      </td>
-                      <td class="branch-name-td">吉祥寺店</td>
-                    </tr>
-                    <tr class="branchsearch-tr">
-                      <td class="radio-cell">
-                        <input
-                          type="radio"
-                          name="selectBranch"
-                          id="branch-radio-tachikawa"
-                          aria-label="立川店を選択"
-                        />
-                        <label
-                          for="branch-radio-tachikawa"
-                          class="visually-hidden"
-                          >立川店を選択</label
-                        >
-                      </td>
-                      <td class="branch-name-td">立川店</td>
-                    </tr>
-                    <tr class="branchsearch-tr">
-                      <td class="radio-cell">
-                        <input
-                          type="radio"
-                          name="selectBranch"
-                          id="branch-radio-machida"
-                          aria-label="町田店を選択"
-                        />
-                        <label
-                          for="branch-radio-machida"
-                          class="visually-hidden"
-                          >町田店を選択</label
-                        >
-                      </td>
-                      <td class="branch-name-td">町田店</td>
-                    </tr>
-                  </tbody>
-                </table>
+            <form
+              th:action="@{/branch/select}"
+              method="post"
+              th:object="${branchForm}"
+            >
+              <div class="branchsearch-inner-box">
+                <div class="order-history-scroll branchsearch-scroll">
+                  <table
+                    class="product-table sticky-header-table branchlist branchsearch-table"
+                  >
+                    <thead>
+                      <tr>
+                        <th class="radio-cell">選択</th>
+                        <th class="branch-name-th">店舗名</th>
+                      </tr>
+                    </thead>
+                    <tbody class="branchsearch-tbody">
+                      <tr class="branchsearch-tr">
+                        <td class="radio-cell">
+                          <input
+                            type="radio"
+                            name="selectBranch"
+                            id="branch-radio-shinjuku"
+                            value="shinjuku"
+                            aria-label="新宿店を選択"
+                          />
+                          <label
+                            for="branch-radio-shinjuku"
+                            class="visually-hidden"
+                            >新宿店を選択</label
+                          >
+                        </td>
+                        <td class="branch-name-td">新宿店</td>
+                      </tr>
+                      <tr class="branchsearch-tr">
+                        <td class="radio-cell">
+                          <input
+                            type="radio"
+                            name="selectBranch"
+                            id="branch-radio-shibuya"
+                            value="shibuya"
+                            aria-label="渋谷店を選択"
+                          />
+                          <label
+                            for="branch-radio-shibuya"
+                            class="visually-hidden"
+                            >渋谷店を選択</label
+                          >
+                        </td>
+                        <td class="branch-name-td">渋谷店</td>
+                      </tr>
+                      <tr class="branchsearch-tr">
+                        <td class="radio-cell">
+                          <input
+                            type="radio"
+                            name="selectBranch"
+                            id="branch-radio-ikebukuro"
+                            value="ikebukuro"
+                            aria-label="池袋店を選択"
+                          />
+                          <label
+                            for="branch-radio-ikebukuro"
+                            class="visually-hidden"
+                            >池袋店を選択</label
+                          >
+                        </td>
+                        <td class="branch-name-td">池袋店</td>
+                      </tr>
+                      <tr class="branchsearch-tr">
+                        <td class="radio-cell">
+                          <input
+                            type="radio"
+                            name="selectBranch"
+                            id="branch-radio-akihabara"
+                            value="akihabara"
+                            aria-label="秋葉原店を選択"
+                          />
+                          <label
+                            for="branch-radio-akihabara"
+                            class="visually-hidden"
+                            >秋葉原店を選択</label
+                          >
+                        </td>
+                        <td class="branch-name-td">秋葉原店</td>
+                      </tr>
+                      <tr class="branchsearch-tr">
+                        <td class="radio-cell">
+                          <input
+                            type="radio"
+                            name="selectBranch"
+                            id="branch-radio-shinagawa"
+                            value="shinagawa"
+                            aria-label="品川店を選択"
+                          />
+                          <label
+                            for="branch-radio-shinagawa"
+                            class="visually-hidden"
+                            >品川店を選択</label
+                          >
+                        </td>
+                        <td class="branch-name-td">品川店</td>
+                      </tr>
+                      <tr class="branchsearch-tr">
+                        <td class="radio-cell">
+                          <input
+                            type="radio"
+                            name="selectBranch"
+                            id="branch-radio-ueno"
+                            value="ueno"
+                            aria-label="上野店を選択"
+                          />
+                          <label for="branch-radio-ueno" class="visually-hidden"
+                            >上野店を選択</label
+                          >
+                        </td>
+                        <td class="branch-name-td">上野店</td>
+                      </tr>
+                      <tr class="branchsearch-tr">
+                        <td class="radio-cell">
+                          <input
+                            type="radio"
+                            name="selectBranch"
+                            id="branch-radio-nakano"
+                            value="nakano"
+                            aria-label="中野店を選択"
+                          />
+                          <label
+                            for="branch-radio-nakano"
+                            class="visually-hidden"
+                            >中野店を選択</label
+                          >
+                        </td>
+                        <td class="branch-name-td">中野店</td>
+                      </tr>
+                      <tr class="branchsearch-tr">
+                        <td class="radio-cell">
+                          <input
+                            type="radio"
+                            name="selectBranch"
+                            id="branch-radio-kichijoji"
+                            value="kichijoji"
+                            aria-label="吉祥寺店を選択"
+                          />
+                          <label
+                            for="branch-radio-kichijoji"
+                            class="visually-hidden"
+                            >吉祥寺店を選択</label
+                          >
+                        </td>
+                        <td class="branch-name-td">吉祥寺店</td>
+                      </tr>
+                      <tr class="branchsearch-tr">
+                        <td class="radio-cell">
+                          <input
+                            type="radio"
+                            name="selectBranch"
+                            id="branch-radio-tachikawa"
+                            value="tachikawa"
+                            aria-label="立川店を選択"
+                          />
+                          <label
+                            for="branch-radio-tachikawa"
+                            class="visually-hidden"
+                            >立川店を選択</label
+                          >
+                        </td>
+                        <td class="branch-name-td">立川店</td>
+                      </tr>
+                      <tr class="branchsearch-tr">
+                        <td class="radio-cell">
+                          <input
+                            type="radio"
+                            name="selectBranch"
+                            id="branch-radio-machida"
+                            value="machida"
+                            aria-label="町田店を選択"
+                          />
+                          <label
+                            for="branch-radio-machida"
+                            class="visually-hidden"
+                            >町田店を選択</label
+                          >
+                        </td>
+                        <td class="branch-name-td">町田店</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
-            </div>
+
+              <!-- ▼ ボタン部（onclick維持） -->
+              <div class="productlist-buttons button-row-split">
+                <button
+                  class="back-btn"
+                  onclick="history.back(); return false;"
+                >
+                  戻る
+                </button>
+                <button
+                  class="order-btn primary"
+                  onclick="location.href='prodSearchStep2.html'; return false;"
+                >
+                  選択
+                </button>
+              </div>
+            </form>
           </div>
-        </div>
-        <div class="productlist-buttons button-row-split">
-          <button class="back-btn" onclick="history.back(); return false;">
-            戻る
-          </button>
-          <button
-            class="order-btn primary"
-            onclick="location.href='prodSearchStep2.html'; return false;"
-          >
-            選択
-          </button>
         </div>
       </div>
     </div>

@@ -12,31 +12,44 @@
     </div>
     <div class="container">
       <div class="smstock-box">
-        <form class="stock-form">
+        <form
+          class="stock-form"
+          th:action="@{/shop/updateStock}"
+          method="post"
+          th:object="${stockForm}"
+        >
           <h2 class="stock-form-title">店舗在庫編集</h2>
+
           <div class="form-group">
             <label for="productIdTitle">商品ID</label>
-            <label for="productId">101</label>
+            <label for="productId" th:text="*{productId}">101</label>
           </div>
+
           <div class="form-group">
             <label for="productNameTitle">商品名</label>
-            <label for="productName">メロンソーダ</label>
+            <label for="productName" th:text="*{productName}"
+              >メロンソーダ</label
+            >
           </div>
+
           <div class="form-group">
             <label for="priceTitle">販売価格</label>
-            <label for="price">120</label>
+            <label for="price" th:text="*{price}">120</label>
           </div>
+
           <div class="form-group">
             <label for="stock">在庫数</label>
             <input
               type="number"
               id="stock"
               name="stock"
+              th:field="*{stock}"
               min="0"
               value=""
               required
             />
           </div>
+
           <div class="productlist-buttons button-row-split">
             <button
               class="back-btn"

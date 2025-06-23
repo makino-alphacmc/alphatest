@@ -12,51 +12,103 @@
         class="productlist-box"
         style="background: transparent; box-shadow: none; border: none"
       >
-        <form class="stock-form">
+        <form
+          class="stock-form"
+          action="#"
+          method="post"
+          th:action="@{/user/update}"
+          th:object="${userForm}"
+        >
           <h2 class="stock-form-title">ユーザ編集</h2>
+
           <div class="form-group">
             <label for="userId">ユーザID</label>
-            <input type="text" id="userId" name="userId" required />
+            <input
+              type="text"
+              id="userId"
+              name="userId"
+              th:field="*{userId}"
+              required
+            />
           </div>
+
           <div class="form-group">
-            <label for="shopIdTitle">店舗ID</label>
-            <input type="text" id="shopId" name="shopId" required />
+            <label for="shopId">店舗ID</label>
+            <input
+              type="text"
+              id="shopId"
+              name="shopId"
+              th:field="*{shopId}"
+              required
+            />
           </div>
+
           <div class="form-group">
             <label for="password">パスワード</label>
-            <input type="text" id="password" name="password" required />
+            <input
+              type="text"
+              id="password"
+              name="password"
+              th:field="*{password}"
+              required
+            />
           </div>
+
           <div class="form-group">
             <label for="zipcode">郵便番号</label>
-            <input type="text" id="zipcode" name="zipcode" required />
+            <input
+              type="text"
+              id="zipcode"
+              name="zipcode"
+              th:field="*{zipcode}"
+              required
+            />
           </div>
+
           <div class="form-group">
             <label for="address">住所</label>
-            <input type="text" id="address" name="address" required />
+            <input
+              type="text"
+              id="address"
+              name="address"
+              th:field="*{address}"
+              required
+            />
           </div>
+
           <div class="form-group">
             <label for="userName">氏名</label>
-            <input type="text" id="userName" name="userName" required />
+            <input
+              type="text"
+              id="userName"
+              name="userName"
+              th:field="*{userName}"
+              required
+            />
           </div>
+
           <div class="form-group">
             <label for="email">メールアドレス</label>
             <input
               type="text"
               id="email"
               name="email"
+              th:field="*{email}"
               class="input-text"
               required
             />
           </div>
+
           <div class="form-group">
             <label for="role">権限</label>
-            <select id="role" name="role" required>
+            <select id="role" name="role" th:field="*{role}" required>
               <option value="" disabled selected>権限を選択してください</option>
               <option value="user">一般ユーザ</option>
               <option value="manager">店舗担当者</option>
               <option value="admin">管理者</option>
             </select>
           </div>
+
           <div class="productlist-buttons button-row-split">
             <button
               class="back-btn"

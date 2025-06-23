@@ -19,7 +19,11 @@
               各店舗情報を直接編集し、「更新」ボタンで保存してください。
             </p>
             <div class="smshop-inner-box">
-              <form>
+              <form
+                th:action="@{/shop/update}"
+                method="post"
+                th:object="${shopForm}"
+              >
                 <table class="product-table smshop-table">
                   <thead>
                     <tr>
@@ -34,50 +38,45 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td class="smshop-td-center">S001</td>
+                      <td class="smshop-td-center" th:text="*{shopId}">S001</td>
                       <td class="smshop-td-center">
                         <input
                           type="text"
-                          name="companyName"
-                          value="株式会社アルファ"
-                          required
+                          th:field="*{shopName}"
                           class="smshop-input smshop-input-company"
+                          required
                         />
                       </td>
                       <td class="smshop-td-center">
                         <input
                           type="text"
-                          name="zipcode"
-                          value="150-0043"
-                          required
+                          th:field="*{zipcode}"
                           class="smshop-input smshop-input-zip"
+                          required
                         />
                       </td>
                       <td class="smshop-td-center">
                         <input
                           type="text"
-                          name="address"
-                          value="東京都渋谷区道玄坂1-1-1"
-                          required
+                          th:field="*{address}"
                           class="smshop-input smshop-input-address"
+                          required
                         />
                       </td>
                       <td class="smshop-td-center">
                         <input
                           type="text"
-                          name="tel"
-                          value="03-1234-5678"
-                          required
+                          th:field="*{tel}"
                           class="smshop-input smshop-input-tel"
+                          required
                         />
                       </td>
                       <td class="smshop-td-center">
                         <input
                           type="email"
-                          name="email"
-                          value="tokyo@alpha.co.jp"
-                          required
+                          th:field="*{email}"
                           class="smshop-input smshop-input-email"
+                          required
                         />
                       </td>
                       <td class="smshop-td-center">

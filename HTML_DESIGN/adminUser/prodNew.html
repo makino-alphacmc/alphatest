@@ -9,30 +9,60 @@
   <body>
     <div class="container">
       <div class="smstock-box">
-        <form class="stock-form">
+        <form
+          class="stock-form"
+          th:action="@{/product/add}"
+          method="post"
+          th:object="${productForm}"
+        >
           <h2 class="stock-form-title">商品追加</h2>
+
           <div class="form-group">
             <label for="prodId">商品ID</label>
-            <input type="text" id="prodId" name="prodId" readonly />
+            <input
+              type="text"
+              id="prodId"
+              name="prodId"
+              th:field="*{prodId}"
+              readonly
+            />
           </div>
+
           <div class="form-group">
             <label for="prodName">商品名</label>
-            <input type="text" id="prodName" name="prodName" required />
+            <input
+              type="text"
+              id="prodName"
+              name="prodName"
+              th:field="*{prodName}"
+              required
+            />
           </div>
+
           <div class="form-group">
             <label for="cost">基準仕入価格</label>
-            <input type="number" id="cost" name="cost" min="0" required />
+            <input
+              type="number"
+              id="cost"
+              name="cost"
+              th:field="*{cost}"
+              min="0"
+              required
+            />
           </div>
+
           <div class="form-group">
             <label for="orderUnit">注文単位</label>
             <input
               type="number"
               id="orderUnit"
               name="orderUnit"
+              th:field="*{orderUnit}"
               min="1"
               required
             />
           </div>
+
           <div class="productlist-buttons button-row-split">
             <button
               class="back-btn"
